@@ -1,22 +1,298 @@
+<!DOCTYPE html>
 <html lang="fr">
+
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>AfriTalent — Accueil</title>
- <!-- Bootstrap 5 via CDN : feuille de style -->
- <link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
- <!-- Votre feuille de style personnelle -->
- <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfriTalent — Accueil</title>
+    <!-- Bootstrap 5 via CDN : feuille de style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Votre feuille de style personnelle -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/9fd1c84033.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
- <!-- Le contenu de la page sera ajoute ici -->
- <!-- Bootstrap 5 via CDN : script JavaScript -->
- <script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script>
- <!-- Votre script JavaScript -->
- <script src="js/main.js"></script>
- </body>
- </html>
+    <!-- Le contenu de la page sera ajoute ici -->
+
+    <header>
+        <!-- Bootstrap conservé uniquement sur la navbar -->
+        <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+            <div class="container-lg d-flex justify-content-between container-dark">
+                <a class="navbar-brand text-uppercase fw-bold" href="/index.html">
+                    <span class="bg-success bg-gradient p-1 rounded-3 text-light">afri</span>talent
+                </a>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarcollapse">
+                    <ul class="navbar-nav d-flex justify-content-center nav-dark">
+                        <li class="nav-item active mx-2">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="freelances.html">Freelances</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="tarifs.html">Tarifs</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link active" href="about.html"> À propos</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#valeur"> Blog</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="contact.html"> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex ms-auto align-items-center">
+                    <a class="btn btn-success d-none d-md-block mx-1 rounded-pill" href="contact.html"
+                        role="button">Rejoindre AfriTalent</a>
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon px-2"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section d'introduction avec notre histoire -->
+        <section class="Notre-Histoir">
+            <div>
+                <p>Notre Histoire</p>
+                <h1>Le Standard Global de l'Elite Africaine.</h1>
+                <div>
+                    <div>
+                        <p>Depuis notre fondation, AfriTalent s'est donné pour mission de briser les
+                            frontières géographiques en connectant les meilleurs talents d'Afrique aux opportunités
+                            mondiales les plus prestigieuses. Nous construisons le pont numérique de demain.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="image/annie-spratt-sggw4-qDD54-unsplash.jpg" alt="photo d'illustration">
+        </section>
+
+        <!-- Section des valeurs cardinales -->
+        <section class="valeur-cardinale" id="valeur">
+            <h2>Nos Valeurs Cardinales</h2>
+            <p>Les principes qui guident chaque mise en relation et chaque ligne de code
+                produite par <br> notre communauté.</p>
+            <div>
+                <div>
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fa-regular fa-circle-check"></i>
+                            <div>
+                                <h5 class="card-title">Excellence</h5>
+                                <p class="card-text">Nous ne transigeons jamais sur la qualité. Chaque
+                                    mission est démonstration de savoir faire.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fa-regular fa-lightbulb"></i>
+                            <div>
+                                <h5 class="card-title">Innovation</h5>
+                                <p class="card-text">Nous repoussons sans cesse les limites technologiques
+                                    pour offrir des solutions créatives et performantes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fa-regular fa-address-card"></i>
+                            <div>
+                                <h5 class="card-title">Accessibilité</h5>
+                                <p class="card-text">Démocratiser l'accès aux meilleures opportunités
+                                    professionnelles, quel que soit le pays d'origine.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-users"></i>
+                            <div>
+                                <h5 class="card-title">Communauté</h5>
+                                <p class="card-text">La force du collectif est notre moteur. Nous grandissons
+                                    ensemble, partageons nous entraidons.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section de l'impact -->
+        <section class="impacte">
+            <div>
+                <h2>Notre Impact</h2>
+                <p>Depuis notre lancement, nous avons connecté plus de 10,000
+                    talents africains à des opportunités professionnelles à travers le monde, générant plus de 50
+                    millions de dollars en revenus pour nos freelances et aidant plus de 500 entreprises à construire
+                    des équipes diversifiées et performantes.</p>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
+                    <div>
+                        <h3>+2500</h3>
+                        <h5>Freelances actifs</h5>
+                        <p>Une communauté d'experts validés sur plus de 50 technologies différentes à travers le
+                            continent.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <h3>+800</h3>
+                            <div>
+                                <h5>Entreprises</h5>
+                                <p>Des startups aux groupes du Fortune 500 nous <br> font confiance.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h1>+12k</h1>
+                            <h6>Missions réalisées</h6>
+                        </div>
+                        <div>
+                            <h1>15</h1>
+                            <h5>Pays représentés</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section de l'équipe -->
+        <section class="equipe">
+            <h1>Ceux qui portent la vision</h1>
+            <p>Une équipe pluridisciplinaire passionnée par l'innovation et le développement <br> du continent africain.</p>
+            <a href="#">Voir toute l'équipe <i class="fa-solid fa-arrow-right"></i></a>
+            <div>
+                <div>
+                    <div class="card">
+                        <img src="image/unnamed (3).png" alt="image personne">
+                        <div class="card-body">
+                            <h5 class="card-title">Amadou Diallo</h5>
+                            <h6 class="card-subtitle">Founder & CEO</h6>
+                            <p class="card-text">Expert en transformation digitale avec 15 ans d'expérience dans les
+                                tech hubs mondiaux.</p>
+                            <a href="" class="card-link"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="" class="card-link"><i class="fa-solid fa-earth-americas"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <img src="image/unnamed (4).png" alt="image personne">
+                        <div class="card-body">
+                            <h5 class="card-title">Sarah Mensah</h5>
+                            <h6 class="card-subtitle">Chief Technology Officer</h6>
+                            <p class="card-text">Architecte logicielle passionnée par l'IA et l'infrastructure cloud
+                                scalable.</p>
+                            <a href="" class="card-link"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="" class="card-link"><i class="fa-solid fa-earth-americas"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <img src="image/unnamed (5).png" alt="image personne">
+                        <div class="card-body">
+                            <h5 class="card-title">Koffi Kouassi</h5>
+                            <h6 class="card-subtitle">Head of Produc</h6>
+                            <p class="card-text">Spécialiste UX/UI dévoué à créer des expériences utilisateurs fluides
+                                et humaines.</p>
+                            <a href="" class="card-link"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="" class="card-link"><i class="fa-solid fa-earth-americas"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <img src="image/unnamed (6).png" alt="image personne">
+                        <div class="card-body">
+                            <h5 class="card-title">Fatou N'diaye</h5>
+                            <h6 class="card-subtitle">Head of Operations</h6>
+                            <p class="card-text">Garante de l'excellence opérationnelle et de la satisfaction de nos
+                                partenaires.</p>
+                            <a href="" class="card-link"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="" class="card-link"><i class="fa-solid fa-earth-americas"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <div>
+                <div>
+                    <a href="index.html">
+                        <span>afri</span>talent
+                    </a>
+                    <p>La plateforme de référence pour connecter l'élite technologique africaine
+                        avec le marché global.</p>
+                </div>
+                <div>
+                    <h6>Plateforme</h6>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="freelances.html">Freelances</a></li>
+                        <li><a href="tarifs.html">Tarifs</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6>Ressources</h6>
+                    <ul>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6>Contact</h6>
+                    <p>Inscrivez-vous à notre newsletter pour rester informé.</p>
+                    <div>
+                        <input type="email" placeholder="Votre adresse email">
+                        <button><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <p>&copy; 2026 AfriTalent. Tous droits réservés.</p>
+                <div>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 via CDN : script JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Votre script JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

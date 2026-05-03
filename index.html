@@ -1,22 +1,393 @@
+<!DOCTYPE html>
 <html lang="fr">
+
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>AfriTalent — Accueil</title>
- <!-- Bootstrap 5 via CDN : feuille de style -->
- <link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
- <!-- Votre feuille de style personnelle -->
- <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfriTalent — Accueil</title>
+    <!-- Bootstrap 5 via CDN : feuille de style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Votre feuille de style personnelle -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/9fd1c84033.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
- <!-- Le contenu de la page sera ajoute ici -->
- <!-- Bootstrap 5 via CDN : script JavaScript -->
- <script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script>
- <!-- Votre script JavaScript -->
- <script src="js/main.js"></script>
- </body>
- </html>
+    <!-- Le contenu de la page sera ajoute ici -->
+    <-- En-tête avec barre de navigation -->
+
+    <header>
+        <!-- Bootstrap conservé uniquement sur la navbar -->
+        <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+            <div class="container-lg d-flex justify-content-between container-dark">
+                <a class="navbar-brand text-uppercase fw-bold" href="index.html">
+                    <span class="bg-success bg-gradient p-1 rounded-3 text-light">afri</span>talent
+                </a>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarcollapse">
+                    <ul class="navbar-nav d-flex justify-content-center nav-dark">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="freelances.html">Freelances</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="tarifs.html">Tarifs</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="about.html"> À propos</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="about.html#valeur"> Blog</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="contact.html"> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex ms-auto align-items-center">
+                    <a class="btn btn-success d-none d-md-block mx-1 rounded-pill" href="contact.html"
+                        role="button">Rejoindre AfriTalent</a>
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon px-2"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <-- Section Héroïque -->
+    <main>
+        <section class="hero">
+            <div>
+                <div>
+                    <p>Global Talent Hub</p>
+                    <h1>Le pont d'élite entre <br> <span>l'Afrique</span> et le monde.</h1>
+                    <p>Connectez-vous avec les meilleurs profils technologiques africains. Une sélection
+                        rigoureuse pour des projets d'exception, sans <br> frontières</p>
+                    <button>Je cherche un Freelance</button>
+                    <button>Je suis un Freelance</button>
+                </div>
+                <div>
+                    <img src="image/img.acc.png" alt="Image d'illustration">
+                </div>
+            </div>
+        </section>
+
+        <!-- Compteurs de la page -->
+        <div>
+            <div>
+                <div>
+                    <h2>+2500</h2>
+                    <p>Freelances experts</p>
+                </div>
+                <div>
+                    <h2>+800</h2>
+                    <p>Entreprises Partenaires</p>
+                </div>
+                <div>
+                    <h2>+12000</h2>
+                    <p>Missions Accomplies</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section "Comment ça marche ?" -->
+        <section class="comment-ca-marche">
+            <div>
+                <h2>Comment ça marche ?</h2>
+                <p>Un processus fluide pour transformer vos idées en réalité technologique.</p>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <i class="fa-solid fa-arrows-down-to-people fa-6x fa-md-2x"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <p><strong>1. Match Intelligent</strong></p>
+                            <div>
+                                <p>
+                                    Notre algorithme et nos recruteurs experts identifient le profil parfait
+                                    pour vos besoins spécifiques en moins de 48h.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </div>
+                                <div>
+                                    <strong>2. Lancement Direct</strong>
+                                    <p>Démarrez votre projet immédiatement avec une communication
+                                        fluide et des outils collaboratifs intégrés.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="fa-solid fa-rocket"></i>
+                                </div>
+                                <div>
+                                    <strong>3. Lancement Rapide</strong>
+                                    <p>
+                                        Démarrez votre projet en quelques jours, avec un suivi dédié et une
+                                        communication fluide.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-award"></i>
+                    <div>
+                        <strong>4. Suivi et Excellence</strong>
+                        <p>Nous assurons un suivi de qualité tout au long de la mission pour garantir votre
+                            succès total.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section "Nos Services" -->
+        <section class="categories-services">
+            <div>
+                <p>Expertises</p>
+                <h2>Trouvez l'expert qu'il vous faut</h2>
+
+                <!-- Cartes de services premier rang -->
+                <div>
+                    <div>
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <div>
+                                <h5>Web Development</h5>
+                                <p>Full-stack, React, Node.js, Python. Des développeurs capables
+                                    de bâtir des infrastructures scalables.</p>
+                                <a href="#">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <i class="fa-solid fa-pen-ruler"></i>
+                            <div>
+                                <h5>UI/UX Design</h5>
+                                <p>Product Design, Research, Visual identity. Créez des
+                                    expériences mémorables et centrées utilisateur.</p>
+                                <a href="#">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <i class="fa-solid fa-arrows-to-dot"></i>
+                            <div>
+                                <h5>Digital Marketing</h5>
+                                <p>Growth hacking, SEO, Content strategy. Accélérez votre
+                                    visibilité sur le marché global.</p>
+                                <a href="#">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cartes de services deuxième rang -->
+                    <div>
+                        <div>
+                            <i class="fa-solid fa-robot"></i>
+                            <div>
+                                <h5>Data & AI</h5>
+                                <p>Machine Learning, Data Engineering. Exploitez la puissance
+                                    de vos données pour décider.</p>
+                                <a href="#">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <div>
+                                <h5>Tech Writing</h5>
+                                <p>Documentation, White papers, API docs. Communiquez clairement
+                                    vos solutions techniques.</p>
+                                <a href="#">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <i class="fa-regular fa-cloud"></i>
+                            <div>
+                                <h5>DevOps & Cloud</h5>
+                                <p>AWS, Azure, Docker, Kubernetes. Assurez la stabilité et
+                                    l'automatisation de vos systèmes.</p>
+                                <a href="#">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section "Témoignages" sans carousel -->
+        <section class="section-temoignages" id="temoignage">
+            <div>
+                <h2>Ils nous font confiance</h2>
+                <p>Découvrez pourquoi les leaders technologiques mondiaux choisissent
+                    AfriTalent pour sourcer leurs équipes.</p>
+
+                <!-- Témoignage 1 -->
+                <div class="carte-temoignage">
+                    <div class="etoiles">★★★★★</div>
+                    <p class="citation">
+                        "Trouver des profils Data Science de qualité était un défi constant
+                        jusqu'à ce qu'on découvre AfriTalent. La plateforme facilite tout,
+                        du sourcing à la facturation."
+                    </p>
+                    <div class="personne">
+                        <div class="avatar">
+                            <img src="image/jeremy-mcgilvrey-Mum-4dB0VsE-unsplash (1).jpg" alt="Elena Rodriguez">
+                        </div>
+                        <div>
+                            <p class="nom">Elena Rodriguez</p>
+                            <p class="role">Product Head @ DataFlow London</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage 2 -->
+                <div class="carte-temoignage">
+                    <div class="etoiles">★★★★★</div>
+                    <p class="citation">
+                        "La réactivité est le point fort. On a eu accès à des experts en
+                        cybersécurité immédiatement. Une flexibilité rare sur le marché
+                        aujourd'hui."
+                    </p>
+                    <div class="personne">
+                        <div class="avatar">
+                            <img src="image/mohamad-khosravi-zCSlmX3-98I-unsplash.jpg" alt="Marcus Garvey">
+                        </div>
+                        <div>
+                            <p class="nom">Marcus Garvey</p>
+                            <p class="role">Founder @ StartupHub Lagos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage 3 -->
+                <div class="carte-temoignage">
+                    <div class="etoiles">★★★★★</div>
+                    <p class="citation">
+                        "AfriTalent nous a permis de constituer une équipe data complète
+                        en moins de deux semaines. La qualité des profils dépasse souvent
+                        nos attentes."
+                    </p>
+                    <div class="personne">
+                        <div class="avatar">
+                            <img src="image/fakhri-labib-ZhBGD4vykCU-unsplash.jpg" alt="Sophie Martin">
+                        </div>
+                        <div>
+                            <p class="nom">Sophie Martin</p>
+                            <p class="role">Head of Engineering @ FinTech Berlin</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage 4 -->
+                <div class="carte-temoignage">
+                    <div class="etoiles">★★★★★</div>
+                    <p class="citation">
+                        "Grâce à AfriTalent, nous avons trouvé des développeurs blockchain
+                        exceptionnels en Afrique de l'Ouest. Un vrai game-changer pour notre
+                        roadmap."
+                    </p>
+                    <div class="personne">
+                        <div class="avatar">
+                            <img src="image/gregory-hayes-h5cd51KXmRQ-unsplash.jpg" alt="James Okafor">
+                        </div>
+                        <div>
+                            <p class="nom">James Okafor</p>
+                            <p class="role">CTO @ Web3Labs Dubai</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section "Appel à l'action" -->
+        <section class="Action">
+            <h1>Prêt à propulser votre <br> prochain projet ?</h1>
+            <p>Rejoignez des centaines d'entreprises innovantes qui <br> construisent l'avenir avec
+                les meilleurs talents d'Afrique.</p>
+            <a href="tarif.html">Commencer Maintenant</a>
+            <a href="freelance.html">Consulter les Profils</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <div>
+                <div>
+                    <a href="index.html">
+                        <span>afri</span>talent
+                    </a>
+                    <p>La plateforme de référence pour connecter l'élite technologique africaine
+                        avec le marché global.</p>
+                </div>
+                <div>
+                    <h6>Plateforme</h6>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="freelances.html">Freelances</a></li>
+                        <li><a href="tarifs.html">Tarifs</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6>Ressources</h6>
+                    <ul>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6>Contact</h6>
+                    <p>Inscrivez-vous à notre newsletter pour rester informé.</p>
+                    <div>
+                        <input type="email" placeholder="Votre adresse email">
+                        <button><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <p>&copy; 2026 AfriTalent. Tous droits réservés.</p>
+                <div>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 via CDN : script JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Votre script JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
