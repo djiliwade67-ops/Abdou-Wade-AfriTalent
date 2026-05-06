@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+:root {
+    /* Brand Colors */
+    --primary-color: #0A2647;
+    --primary-dark: #001128;
+    --accent-color: #10B981;
+    --accent-hover: #059669;
+    --secondary-color: #2563EB;
+    
+    /* Neutral / UI Colors */
+    --white: #FFFFFF;
+    --gray-50: #F8FAFC;
+    --gray-100: #F1F5F9;
+    --gray-200: #E2E8F0;
+    --gray-400: #94A3B8;
+    --gray-600: #64748B;
+    --danger: #EF4444;
+    
+    /* Dark Mode Palette */
+    --dark-bg: #050C16;
+    --dark-surface: #0A111E;
+    --dark-text: #F8FAFC;
+     
+    /* Typography */
+    --font-heading: 'Poppin', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    
+    /* shadow*/
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.05);
+    
+}
+ 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-body);
+    background:var(--white);
+    color: var(--dark-surface);
+}
+
+h1, h2, h3, h4, h5{
+    color:var(--primary-dark);
+}
+
+/* NAVBAR*/
+
+.nav-link{
+    position:relative;
+}
+
+.nav-link:after{
+    content: "";
+    position: absolute;
+    background-color: var(--accent-color);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+.nav-link:focus{
+    color: var(--accent-hover);
+}
+.nav-link:hover:after{
+    width: 100%;
+}
