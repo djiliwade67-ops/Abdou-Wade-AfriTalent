@@ -70,3 +70,618 @@ h1, h2, h3, h4, h5{
 .nav-link:hover:after{
     width: 100%;
 }
+
+.compteur div h2 {
+    color : rgb(111, 229, 127)
+
+    
+}
+
+
+/* === SECTION HERO === */
+.text-1 {
+    font-size: 0.9em;
+    width: 11em;
+    border-radius: 20rem;
+    color: #00714D;
+    background-color: #6CF8BB;
+}
+
+.hero > div :nth-child(1) :nth-child(2) span {
+    color: #006C49;
+} 
+
+ .hero > div :nth-child(1) :nth-child(4).btn-1{
+    background-color: var(--primary-dark);
+    color: var(--white);
+    font-weight: bold;
+    transition: 0.4s;
+    padding: 1em 2.5em;
+}
+
+.hero > div :nth-child(1) :nth-child(4).btn-1:hover{
+    background-color: var(--gray-50);
+    color: var(--primary-dark);
+}
+
+ .hero > div :nth-child(1) :nth-child(5).btn-1{
+    background-color: var(--gray-50);
+    color: var(--primary-dark);
+    font-weight: bold;
+    border: 1px solid var(--gray-600);
+    padding: 1em 2.5em;
+    transition: 0.4s;
+}
+
+.hero > div :nth-child(1) :nth-child(5).btn-1:hover{
+    background-color: var(--primary-dark);
+    color: var(--white);
+}
+
+ .hero > div :nth-child(2) .img-1{
+    margin-left: 6em;
+    rotate: 2.5deg;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+ }
+
+ .hero > div :nth-child(2) .img-1:hover{
+    transform: scale(1.05);
+    rotate: 0deg;
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.2);
+ }
+
+/* // COMMENT CA MARCHE// */
+
+.container-fluid-1 div div h2 {
+    color : rgb(111, 229, 127) 
+}
+.container-fluid-1 div{
+    background-color: var(--primary-dark);
+    color: var(--gray-400);
+}
+
+.comment-ca-marche>div h2{
+    margin-bottom: 0.5em;
+}
+
+.grid :nth-child(1) .MI { 
+    Background-color: #F6F3F2;
+    transition: 0.3s;
+    &:hover{
+        background-color: var(--white);
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+        &:nth-child(1) i{
+            color:#8a8b8e;
+        }
+        & :nth-child(2) i{
+            color: #006C49;
+            transform:translateX(-1.5rem)
+        }
+    }
+
+}
+.grid :nth-child(1) .MI :nth-child(1) i{     
+    color:#E0DDDC;
+    transition: 0.3s;
+}
+
+.grid :nth-child(1) .MI :nth-child(2) i{
+    color: #006C49;
+    transition: 0.3s;
+    
+}
+.grid :nth-child(1) .MI :nth-child(2) strong{
+    font-size: 1.3em;
+}
+
+
+.grid :nth-child(1) .LD{
+    background-color: var(--primary-dark);
+    color: var(--white);
+    transition: 0.3s;
+    &:hover{
+        transform: translatey(-1rem);
+    }
+}
+
+.grid :nth-child(1) .LD  i{
+    color: rgb(111, 229, 127) ;
+    
+}
+
+.grid :nth-child(1) .LD :nth-child(2) strong{
+    font-size: 1.1em;
+}
+
+.grid :nth-child(1) .LR{
+    background-color: #EBE7E7;
+    transition: 0.3s;
+    &:hover{
+         background-color: var(--white);
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.grid :nth-child(1) .LR :nth-child(2) strong{
+    font-size: 1.1em;
+}
+
+.grid :nth-child(2).SX{
+    background-color:#E0F9EB;
+    transition: 0.3s;
+    &:hover{
+        background-color:var(--accent-color);
+        box-shadow: 10px 10px 30px rgba(35, 182, 106, 0.5);
+        & :nth-child(2) i{
+            color:#6CF8BB;
+            transform:translateX(1.5rem)
+        }
+    }
+
+}
+
+.grid :nth-child(2).SX :nth-child(1) i{
+    color:#00714D;
+    margin-top: 0.3em;
+    font-size: 1.4em;
+    background-color:#6CF8BB;
+    padding: 0.5em 0.5em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;   
+}
+
+/* //Section "Nos Services// */
+
+.section-temoignages{
+    background-color: #FCF9F8;
+}
+
+.categories{
+    background-color:#F6F3F2;
+}
+.categories > div> p{
+    color:  #006C49;
+}
+
+/* === CARTES ÉQUIPE === */
+.cart-t{
+    width: 100%;
+    height: 100%;
+    border:none;
+    transition: 0.4s;
+    &:hover{
+        box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.3);
+        transform: scale(1.03);
+        & > i{
+            background-color: var(--primary-dark);
+            color: var(--white);
+        }
+    }
+}
+
+.cart-t > i{
+    border-radius: 10%;
+    background-color: #F6F3F2;
+    transition: 0.3s;
+    margin:1.3em 0 0.5em 1.5em;
+    width: 3em;
+    height: 3em;
+}
+
+.cart-t > div h5{
+    font-weight: bold;
+}
+
+.cart-t > div a{
+    color: #006C49;
+}
+
+/* //Temoignages// */
+
+.section-temoignages{
+    padding: 5em 0 2em 0;
+    display: flex;
+}
+
+.section-temoignages > div > div >div h2 span{
+    color:  #006C49;
+
+}
+
+.section-temoignages > div > div >div > div .btn-nav{
+    padding: 0.3em 0.5em;
+    margin: 0 0.2em ;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: var(--white);
+    transition: 0.3s;
+    &:hover{
+        background-color: var(--primary-color);
+        color: var(--white);
+    }
+    
+}
+
+.carousel-inner{
+    padding: 1.5em 0 3em 6em;
+    align-self: center;
+
+}
+.carousel-item{
+    padding: 1.5em;
+    background-color: var(--gray-white);
+    border-radius: 2em;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
+    width: 90%;
+
+}
+
+.personne{
+    display: flex;
+}
+
+.personne img{
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1.5em;
+    object-fit: cover;
+    
+}
+
+/* .personne:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 0
+} */
+
+.personne .nom{
+    font-weight: bold;
+    font-size: 1.2em;
+    padding:0
+}
+
+.personne .role{
+    color: var(--gray-600);
+    font-size: 0.9em;
+}
+
+.personne .etoiles{
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+
+.citation{
+    font-style: italic;
+    color: var(--gray-600);
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+/* //section appel a l'action// */
+
+.Action{
+    background-color: #062740;
+    color: var(--white);
+}
+
+.Action h1{
+    COLOR: var(--WHITE);
+}
+
+/* \\frelance// */
+
+.text-2{
+    color: #00714D;
+}
+
+.btn-2{
+    background-color:#006C49;
+    color: var(--white);
+    font-weight: bold;
+    &:hover{
+        background-color: #059669;
+        color: var(--white);
+    }
+}
+
+.cart-freelance{ 
+    margin: 3em 0 3rem 0;
+    padding: 2em 0;
+    background-color: #FCF9F8;
+
+}
+
+.cart-freelance > div > button{
+    background-color:#F6F3F2;
+    color: #616060;
+    border: none;
+    transition: 0.3s;
+    font-weight: bold;
+    border-radius: 20rem;
+    &:hover{
+        background-color: #EBE7E7;
+        color:#616060;
+    }
+}
+.cart-freelance .container > button:focus{
+    background-color: #006C49;
+    color: var(--white);
+}
+
+.cart-freelance .container >div >div .card{
+    width: 100%;
+    height: 90%;
+    transition: 0.4s;
+    border-radius: 1.2em;
+    border: none;
+    background-color: var(--white);
+    &:hover{
+        box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.cart-freelance .container >div >div >div >div> div >img{
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    margin-right: 1.5em;
+    object-fit: cover;
+}
+
+.cart-freelance .container >div >div >div >div >div:nth-child(2) i{
+    color:#FFD20F;
+    font-weight: 2em;
+
+}
+
+.cart-freelance .container >div >div >div >div >div:nth-child(2) span{
+    font-size: 1.1em;
+}
+
+.cart-freelance :nth-child(2) .card :nth-child(2) > h6{
+    color: #00714D;
+}
+
+.cart-freelance :nth-child(2) .card :nth-child(2) > div >a{
+    background-color: #006C49;
+    color: var(--white);
+    font-weight: bold;
+    padding: 0.4em 1.2em;
+    transition: 0.3s;
+    &:hover{
+        background-color: #059669;
+        color: var(--white);
+    }
+}
+
+.offcanvas{
+    background-color: var(--white);
+}
+
+.offcanvas .offcanvas-body >div >div >div >img{
+    width: 100%;
+    height: 80%;
+    border-radius: 2%;
+    margin-right: 1.5em;
+    object-fit: cover;   
+}
+
+.offcanvas-body >div >div :nth-child(2) > div :nth-child(2) >i{
+    color:#FFD20F;
+    font-size: 1.1em;
+}
+
+/*\\ TARIFS//*/ 
+.tarifs{
+    background-color: var(--white);
+}
+
+.tarifs > h1{
+    font-size: 3.5em;
+}
+
+/* === CARTES TARIFS === */
+.tarifs :nth-child(3) > div{
+    border: none;
+    background-color: var(--white);
+    transition: 0.3s;
+    &:hover{
+       box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+    }
+}
+
+.FAQ .accordion-item{
+    border: none;
+    background-color: var(--white);
+    transition: 0.3s;
+    &:hover{
+        box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
+        transform: scale(1.02);
+    }
+}
+
+.tarifs :nth-child(3) :nth-child(2) {
+    scale: 1.05;
+}
+
+.action-tarifs {
+    background-color: var(--primary-dark); 
+
+} 
+
+/* \\section ABOUT// */
+
+.action-tarifs h1{
+    color: var(--white);
+}
+
+.Notre-Histoir{
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.Notre-Histoir > div > p{
+    color: #00714D;
+    font-weight: bold;
+}
+
+.Notre-Histoir > div > h1 {
+    font-weight:900;
+    font-size: 3.5em;
+}
+
+.Notre-Histoir > div > h1 span{
+    color: #006C49;
+}
+
+.Notre-Histoir :nth-child(2) > img{
+    object-fit: cover;
+    transition: 0.5s;
+    overflow: hidden;
+    &:hover{
+        transform: scale(1.04);
+     
+    }
+ 
+}
+
+.image-container{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5em;
+
+}
+
+/* Section des valeurs cardinales */
+
+.card-vc{
+    border:none;
+    transition: 0.4s;
+    &:hover{
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+        transform: scale(1.03);
+        & > div > i{
+            background-color:#10B981;
+            color:#ffff;
+        }
+    }
+}
+
+.card-vc > div > i{
+    border-radius: 20%;
+    background-color:#D3FDEA;
+    transition: 0.3s;
+    padding-top: 0.4em;
+    width: 3em;
+    color:#10B981;
+    height: 1.8em;
+    transition: 0.3s;
+}
+
+.impacte{
+    background-color: var(--white);
+}
+
+.impacte >div > h2{
+    font-size: 2.7em;
+}
+
+.row-1 .FA{
+    background-color: var(--primary-dark);
+    & > div > i{
+        color:#253954;
+        transition: 0.4s;
+    }
+
+    &:hover{
+        & > div > i{
+            rotate: 15deg;
+        }
+    }
+
+    & :nth-child(2){
+        & > h3{
+              color:#6FFBBE;
+        }
+        & > h5{
+            font-weight: bold;
+            color:#cfd4db;
+        }
+        & > p{
+            color:#A7ADB5;
+        }
+    }
+
+}
+
+.row-2 .ETR {
+    background-color: var(--accent-color);
+    color: var(--white);
+    transition: 0.4s;
+        & > h3{
+              color:#ebfbf4;
+        }
+        & >div > h5{
+            font-weight: bold;
+            color:#f5f5f7;
+        }
+        & >div > p{
+            color:#dce0e5;
+        }
+
+}
+
+.row-2 .PR{
+    background-color:#6CF8BB;
+
+}
+
+.row-2 .MIS{
+    background-color:#EBE7E7;
+}
+
+.equipe{
+    margin: 2em 0 0 0;
+    padding: 4em 2em 4em 2em;
+    background-color: #FCF9F8;
+}
+
+/* \\CONTACT// */
+
+.hero-c >div >div :nth-child(1).ER{
+    color: #00714D;
+    font-weight: bold;
+}
+
+.hero-c >div >div >h1{
+    font-size: 3em;
+    & > span{
+    color: #006C49;
+        
+    }
+}
+
+.hero-c >div >div :nth-child(3){
+    color: #83868b;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* === FORMULAIRE DE CONTACT === */
+.card-contact > div >div{
+    border: 3px solid var(--gray-100);
+    background-color: var(--white);
+    transition: 0.3s;
+    &:hover{
+        box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
+        transform: translateY(-0.5rem);
+    }
+    
+}
+
