@@ -1,6 +1,9 @@
 
+/* === IMPORTATION DES POLICES DE CARACTÈRES === */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
- 
+
+/* === VARIABLES CSS GLOBALES === */
+/* Définition de toutes les couleurs et variables de style utilisées dans le projet */
 :root {
     /* Brand Colors */
     --primary-color: #0A2647;
@@ -73,12 +76,11 @@ h1, h2, h3, h4, h5{
 
 .compteur div h2 {
     color : rgb(111, 229, 127)
-
-    
 }
 
-
-/* === SECTION HERO === */
+/* ============================
+   SECTION HERO
+   ============================ */
 .text-1 {
     font-size: 0.9em;
     width: 11em;
@@ -118,11 +120,36 @@ h1, h2, h3, h4, h5{
     color: var(--white);
 }
 
+@media screen and (min-width:770px) and (max-width:990px){
+     .hero > div :nth-child(1) :nth-child(4).btn-1{
+        width: 13rem;
+        padding: 0.5rem 1.7rem;;
+     }
+
+       .hero > div :nth-child(1) :nth-child(5).btn-1{
+        width: 11rem;
+        padding: 0.5rem 1.7rem;
+     }
+}
+
  .hero > div :nth-child(2) .img-1{
     margin-left: 6em;
     rotate: 2.5deg;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
+ }
+
+ @media screen and (min-width :770px)and (max-width:990px){
+     .hero > div :nth-child(2) .img-1{
+    height: 75% ;
+    width: 100%;
+    margin-top: 4rem;
+    rotate: 2.5deg;
+    margin-left: 6em;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+ }
+
  }
 
  .hero > div :nth-child(2) .img-1:hover{
@@ -131,8 +158,9 @@ h1, h2, h3, h4, h5{
     box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.2);
  }
 
-/* // COMMENT CA MARCHE// */
-
+/* ============================
+   SECTION "COMMENT ÇA MARCHE"
+   ============================ */
 .container-fluid-1 div div h2 {
     color : rgb(111, 229, 127) 
 }
@@ -232,8 +260,9 @@ h1, h2, h3, h4, h5{
     border-radius: 50%;   
 }
 
-/* //Section "Nos Services// */
-
+/* ============================
+   SECTION NOS SERVICES
+   ============================ */
 .section-temoignages{
     background-color: #FCF9F8;
 }
@@ -245,7 +274,9 @@ h1, h2, h3, h4, h5{
     color:  #006C49;
 }
 
-/* === CARTES ÉQUIPE === */
+/* ============================
+   CARTES ÉQUIPE
+   ============================ */
 .cart-t{
     width: 100%;
     height: 100%;
@@ -278,8 +309,9 @@ h1, h2, h3, h4, h5{
     color: #006C49;
 }
 
-/* //Temoignages// */
-
+/* ============================
+   TÉMOIGNAGES / AVIS CLIENTS
+   ============================ */
 .section-temoignages{
     padding: 5em 0 2em 0;
     display: flex;
@@ -361,8 +393,9 @@ h1, h2, h3, h4, h5{
     font-weight: bold;
 }
 
-/* //section appel a l'action// */
-
+/* ============================
+   APPEL À L'ACTION (CTA)
+   ============================ */
 .Action{
     background-color: #062740;
     color: var(--white);
@@ -372,8 +405,9 @@ h1, h2, h3, h4, h5{
     COLOR: var(--WHITE);
 }
 
-/* \\frelance// */
-
+/* ============================
+   SECTION FREELANCES
+   ============================ */
 .text-2{
     color: #00714D;
 }
@@ -386,6 +420,10 @@ h1, h2, h3, h4, h5{
         background-color: #059669;
         color: var(--white);
     }
+}
+
+.img-computer{
+    height: 90%;
 }
 
 .cart-freelance{ 
@@ -470,12 +508,28 @@ h1, h2, h3, h4, h5{
     object-fit: cover;   
 }
 
+@media screen and (min-width:770px) and (max-width:990px) {
+    .offcanvas .offcanvas-body >div >div >div >img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    margin-right: 1.5em;
+    object-fit: cover;   
+}
+
+     .offcanvas .offcanvas-body >div >div >div{
+        padding-bottom: 1rem;
+     }
+}
+
 .offcanvas-body >div >div :nth-child(2) > div :nth-child(2) >i{
     color:#FFD20F;
     font-size: 1.1em;
 }
 
-/*\\ TARIFS//*/ 
+/* ============================
+   SECTION TARIFS
+   ============================ */
 .tarifs{
     background-color: var(--white);
 }
@@ -484,7 +538,9 @@ h1, h2, h3, h4, h5{
     font-size: 3.5em;
 }
 
-/* === CARTES TARIFS === */
+/* ============================
+   CARTES TARIFAIRES
+   ============================ */
 .tarifs :nth-child(3) > div{
     border: none;
     background-color: var(--white);
@@ -506,7 +562,7 @@ h1, h2, h3, h4, h5{
 }
 
 .tarifs :nth-child(3) :nth-child(2) {
-    scale: 1.05;
+    scale: 1.02;
 }
 
 .action-tarifs {
@@ -514,7 +570,9 @@ h1, h2, h3, h4, h5{
 
 } 
 
-/* \\section ABOUT// */
+/* ============================
+   SECTION À PROPOS
+   ============================ */
 
 .action-tarifs h1{
     color: var(--white);
@@ -534,6 +592,26 @@ h1, h2, h3, h4, h5{
     font-weight:900;
     font-size: 3.5em;
 }
+
+@media screen and (max-width : 770px) {
+    
+    .Notre-Histoir > div > h1 {
+        font-weight:900;
+        font-size: 2.7em;
+    }
+    
+}
+
+@media screen and (min-width : 770px) and (max-width :990px) {
+    
+    .Notre-Histoir > div > h1 {
+        font-weight:900;
+        font-size: 3em;
+    }
+    
+}
+
+
 
 .Notre-Histoir > div > h1 span{
     color: #006C49;
@@ -558,8 +636,9 @@ h1, h2, h3, h4, h5{
 
 }
 
-/* Section des valeurs cardinales */
-
+/* ============================
+   SECTION DES VALEURS
+   ============================ */
 .card-vc{
     border:none;
     transition: 0.4s;
@@ -652,8 +731,9 @@ h1, h2, h3, h4, h5{
     background-color: #FCF9F8;
 }
 
-/* \\CONTACT// */
-
+/* ============================
+   SECTION CONTACT
+   ============================ */
 .hero-c >div >div :nth-child(1).ER{
     color: #00714D;
     font-weight: bold;
@@ -673,7 +753,9 @@ h1, h2, h3, h4, h5{
     font-size: 1.1em;
 }
 
-/* === FORMULAIRE DE CONTACT === */
+/* ============================
+   FORMULAIRE DE CONTACT
+   ============================ */
 .card-contact > div >div{
     border: 3px solid var(--gray-100);
     background-color: var(--white);
@@ -684,4 +766,31 @@ h1, h2, h3, h4, h5{
     }
     
 }
+
+
+.video{
+    height: 100%;
+}
+
+@media screen and (min-width :770px)and (max-width:990px) {
+    .video{
+        width: 110%;
+       
+    }
+    .div-video{
+         width: 50%;
+}
+
+}
+
+@media screen and (max-width :770px){
+    .video{
+        width: 135%;
+    }
+
+    .div-video{
+         width: 100%;
+}
+}
+
 
