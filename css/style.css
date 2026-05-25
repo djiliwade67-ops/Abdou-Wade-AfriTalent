@@ -51,7 +51,30 @@ h1, h2, h3, h4, h5{
     color:var(--primary-dark);
 }
 
+header{
+    margin-bottom: 4rem;
+}
+
 /* NAVBAR*/
+.navbar {  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 0; /* Tailles de départ (haute) */
+  background-color: #ffffff;
+  z-index: 1000; /* Pour qu'elle reste au-dessus du contenu */
+  
+  /* Le secret de l'animation fluide est ici : */
+  transition: padding 0.3s ease, background-color 0.3s ease; 
+}
+
+/* Quand la navbar aura AUSSI la classe .shrink */
+.navbar.shrink {
+  padding: 15px 0; 
+  background-color: #f8f9fa; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
 
 .nav-link{
     position:relative;
@@ -81,6 +104,10 @@ h1, h2, h3, h4, h5{
 /* ============================
    SECTION HERO
    ============================ */
+.hero{
+margin-top: 20rem;
+}
+
 .text-1 {
     font-size: 0.9em;
     width: 11em;
@@ -793,4 +820,1015 @@ h1, h2, h3, h4, h5{
 }
 }
 
+/* ============================================================
+   AFRITALENT — DARK MODE
+   ============================================================ */
 
+/* ============================================================
+   VARIABLES DARK MODE
+   ============================================================ */
+body.dark-mode {
+  --dm-bg:           #080D16;
+  --dm-surface:      #0F1724;
+  --dm-surface-2:    #192030;
+  --dm-surface-3:    #1E2A3D;
+  --dm-border:       #263045;
+  --dm-text:         #EEF2F7;
+  --dm-text-muted:   #8B9BB4;
+  --dm-text-subtle:  #4E5E78;
+  --dm-accent:       #10B981;
+  --dm-accent-glow:  rgba(16, 185, 129, 0.18);
+  --dm-accent-light: #6EF7BB;
+  --dm-green-badge:  rgba(110, 247, 187, 0.12);
+  --dm-shadow-sm:    0 4px 16px rgba(0, 0, 0, 0.4);
+  --dm-shadow-md:    0 10px 40px rgba(0, 0, 0, 0.5);
+  --dm-shadow-green: 0 10px 40px rgba(16, 185, 129, 0.25);
+}
+
+/* ============================================================
+   BASE
+   ============================================================ */
+body.dark-mode {
+  background-color: var(--dm-bg);
+  color: var(--dm-text);
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: var(--dm-text);
+}
+
+body.dark-mode p {
+  color: var(--dm-text-muted);
+}
+
+body.dark-mode strong {
+  color: var(--dm-text);
+}
+
+
+/* ============================================================
+   ICÔNE LUNE — curseur + animation au survol
+   ============================================================ */
+.fa-moon,
+.fa-sun {
+  cursor: pointer;
+  transition: transform 0.35s ease, color 0.3s ease;
+}
+
+.fa-moon:hover,
+.fa-sun:hover {
+  transform: rotate(20deg) scale(1.15);
+  color:#059669 ;
+}
+
+body.dark-mode .fa-sun {
+  color:var(--dm-accent) ;
+}
+
+/* ============================================================
+   NAVBAR
+   ============================================================ */
+body.dark-mode .navbar.bg-light{
+  background-color: var(--dm-surface) !important;
+  border-bottom: 1px solid var(--dm-border);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .navbar{
+    transition: padding 0.3s ease, background-color 0.3s ease; 
+}
+
+body.dark-mode .navbar-brand {
+  color: var(--dm-text) !important;
+}
+
+body.dark-mode .nav-link {
+  color: var(--dm-text-muted) !important;
+}
+
+body.dark-mode .nav-link:hover,
+body.dark-mode .nav-link.active {
+  color: var(--dm-accent-light) !important;
+}
+
+body.dark-mode .nav-link:after {
+  background-color: var(--dm-accent);
+}
+
+body.dark-mode .navbar-toggler {
+  border-color: var(--dm-border);
+  filter: invert(1);
+}
+
+body.dark-mode .fa-moon {
+  color: var(--dm-text-muted);
+}
+
+/* ============================================================
+   STATISTIQUES (container-fluid-1)
+   ============================================================ */
+body.dark-mode .container-fluid-1{
+  background-color: var(--dm-surface-2);
+}
+
+body.dark-mode .container-fluid-1 div div h2 {
+  color: var(--dm-accent-light);
+}
+
+body.dark-mode .container-fluid-1 div p {
+  color: var(--dm-text-muted);
+}
+
+/* ============================================================
+   SECTION HERO (index)
+   ============================================================ */
+body.dark-mode .hero {
+  background-color: var(--dm-bg);
+}
+
+body.dark-mode .text-1 {
+  background-color: var(--dm-green-badge);
+  color: var(--dm-accent-light);
+}
+
+body.dark-mode .hero > div :nth-child(1) :nth-child(2) span {
+  color: var(--dm-accent-light);
+}
+
+/* Bouton principal */
+body.dark-mode .hero > div :nth-child(1) :nth-child(4).btn-1 {
+  background-color: var(--dm-text);
+  color: var(--dm-bg);
+}
+
+body.dark-mode .hero > div :nth-child(1) :nth-child(4).btn-1:hover {
+  background-color: var(--dm-accent-light);
+  color: var(--dm-bg);
+}
+
+/* Bouton outline */
+body.dark-mode .hero > div :nth-child(1) :nth-child(5).btn-1 {
+  background-color: transparent;
+  color: var(--dm-text);
+  border-color: var(--dm-border);
+}
+
+body.dark-mode .hero > div :nth-child(1) :nth-child(5).btn-1:hover {
+  background-color: var(--dm-surface-3);
+  color: var(--dm-text);
+}
+
+/* ============================================================
+   SECTION "COMMENT ÇA MARCHE"
+   ============================================================ */
+body.dark-mode .comment-ca-marche > div h2 {
+  color: var(--dm-text);
+}
+
+body.dark-mode .comment-ca-marche > div p {
+  color: var(--dm-text-muted);
+}
+
+/* Card MI (Match Intelligent) */
+body.dark-mode .grid :nth-child(1) .MI {
+  background-color: var(--dm-surface-2);
+}
+
+body.dark-mode .grid :nth-child(1) .MI :nth-child(1) i {
+  color: var(--dm-border);
+}
+
+body.dark-mode .grid :nth-child(1) .MI :nth-child(2) i {
+  color: var(--dm-accent);
+}
+
+body.dark-mode .grid :nth-child(1) .MI :nth-child(2) strong {
+  color: var(--dm-text);
+}
+
+body.dark-mode .grid :nth-child(1) .MI :nth-child(2) p {
+  color: var(--dm-text-muted);
+}
+
+body.dark-mode .grid :nth-child(1) .MI:hover {
+  background-color: var(--dm-surface-3);
+  box-shadow: var(--dm-shadow-md);
+}
+
+/* Card LD (Lancement Direct) */
+body.dark-mode .grid :nth-child(1) .LD {
+  background-color: #0C1E35;
+  border: 1px solid var(--dm-border);
+}
+
+body.dark-mode .grid :nth-child(1) .LD i {
+  color: var(--dm-accent-light);
+}
+
+body.dark-mode .grid :nth-child(1) .LD :nth-child(2) strong,
+body.dark-mode .grid :nth-child(1) .LD :nth-child(2) p {
+  color: var(--dm-text-muted);
+}
+
+/* Card LR (Lancement Rapide) */
+body.dark-mode .grid :nth-child(1) .LR {
+  background-color: var(--dm-surface);
+  border: 1px solid var(--dm-border);
+}
+
+body.dark-mode .grid :nth-child(1) .LR :nth-child(2) strong {
+  color: var(--dm-text);
+}
+
+body.dark-mode .grid :nth-child(1) .LR :nth-child(2) p {
+  color: var(--dm-text-muted);
+}
+
+body.dark-mode .grid :nth-child(1) .LR:hover {
+  background-color: var(--dm-surface-3);
+  box-shadow: var(--dm-shadow-md);
+}
+
+/* Card SX (Suivi et Excellence) */
+body.dark-mode .grid :nth-child(2).SX {
+  background-color: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+body.dark-mode .grid :nth-child(2).SX strong {
+  color: var(--dm-text);
+}
+
+body.dark-mode .grid :nth-child(2).SX p {
+  color: var(--dm-text-muted);
+}
+
+body.dark-mode .grid :nth-child(2).SX :nth-child(1) i {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: var(--dm-accent-light);
+}
+
+body.dark-mode .grid :nth-child(2).SX:hover {
+  background-color: var(--dm-accent);
+  box-shadow: var(--dm-shadow-green);
+}
+
+body.dark-mode .grid :nth-child(2).SX:hover strong,
+body.dark-mode .grid :nth-child(2).SX:hover p {
+  color: #fff;
+}
+
+/* ============================================================
+   SECTION NOS SERVICES (Catégories)
+   ============================================================ */
+body.dark-mode .categories {
+  background-color: var(--dm-surface);
+}
+
+body.dark-mode .categories > div > p {
+  color: var(--dm-accent);
+}
+
+body.dark-mode .categories > div > h2 {
+  color: var(--dm-text);
+}
+
+/* Cartes services */
+body.dark-mode .categories .cart-t {
+  background-color: var(--dm-surface-2);
+  border: 1px solid var(--dm-border);
+}
+
+body.dark-mode .categories .cart-t > i {
+  background-color: var(--dm-surface-3);
+  color: var(--dm-accent);
+}
+
+body.dark-mode .categories .cart-t > div h5 {
+  color: var(--dm-text);
+}
+
+body.dark-mode .categories .cart-t > div p {
+  color: var(--dm-text-muted);
+}
+
+body.dark-mode .categories .cart-t > div a {
+  color: var(--dm-accent);
+}
+
+body.dark-mode .categories .cart-t:hover {
+  box-shadow: var(--dm-shadow-md);
+  background-color: var(--dm-surface-3);
+}
+
+body.dark-mode .categories .cart-t:hover > i {
+  background-color: var(--dm-text);
+  color: var(--dm-bg);
+}
+
+/* ============================================================
+   SECTION TÉMOIGNAGES
+   ============================================================ */
+body.dark-mode .section-temoignages {
+  background-color: var(--dm-surface);
+}
+
+body.dark-mode .section-temoignages > div > div > div h2 {
+  color: var(--dm-text);
+}
+
+body.dark-mode .section-temoignages > div > div > div h2 span {
+  color: var(--dm-accent);
+}
+
+body.dark-mode .section-temoignages > div > div > div > p {
+  color: var(--dm-text-muted);
+}
+
+/* Boutons nav carrousel */
+body.dark-mode .btn-nav {
+  border-color: var(--dm-border);
+  color: var(--dm-text);
+  background-color: var(--dm-surface-2);
+}
+
+body.dark-mode .btn-nav:hover {
+  background-color: var(--dm-text);
+  color: var(--dm-bg);
+  border-color: var(--dm-text);
+}
+
+/* Carte témoignage */
+body.dark-mode .carousel-item {
+  background-color: var(--dm-surface-2);
+  border: 1px solid var(--dm-border);
+  box-shadow: var(--dm-shadow-md);
+}
+
+body.dark-mode .personne .nom {
+  color: var(--dm-text);
+}
+
+body.dark-mode .personne .role {
+  color: var(--dm-text-muted);
+}
+
+body.dark-mode .citation {
+  color: var(--dm-text-muted);
+}
+
+/* ============================================================
+   SECTION CTA (Action)
+   ============================================================ */
+body.dark-mode .Action {
+  background-color: #061828;
+  border: 1px solid var(--dm-border);
+}
+
+body.dark-mode .Action h1 {
+  color: var(--dm-text);
+}
+
+body.dark-mode .Action p {
+  color: var(--dm-text-muted);
+}
+
+/* ============================================================
+   SECTION FREELANCES
+   ============================================================ */
+body.dark-mode .hero .text-2 {
+  color: var(--dm-accent-light);
+}
+
+body.dark-mode .cart-freelance {
+  background-color: var(--dm-surface);
+}
+
+/* Boutons filtres */
+body.dark-mode .cart-freelance > div > button {
+  background-color: var(--dm-surface-2);
+  color: var(--dm-text-muted);
+  border: 1px solid var(--dm-border);
+}
+
+body.dark-mode .cart-freelance > div > button:hover {
+  background-color: var(--dm-surface-3);
+  color: var(--dm-text);
+}
+
+body.dark-mode .cart-freelance .container > button.activer,
+body.dark-mode .cart-freelance .container > button:focus {
+  background-color: var(--dm-accent);
+  color: #fff;
+  border-color: var(--dm-accent);
+}
+
+/* Cartes freelance */
+body.dark-mode .cart-freelance .container > div > div .card {
+  background-color: var(--dm-surface-2);
+  border: 1px solid var(--dm-border) !important;
+}
+
+body.dark-mode .cart-freelance .container > div > div .card:hover {
+  box-shadow: var(--dm-shadow-md);
+  border-color: var(--dm-surface-3) !important;
+}
+
+body.dark-mode .cart-freelance .container > div > div > div > div > div:nth-child(2) i {
+  color: #FFD20F;
+}
+
+body.dark-mode .cart-freelance .container > div > div > div > div > div:nth-child(2) span {
+  color: var(--dm-text);
+}
+
+body.dark-mode .cart-freelance .card-title {
+  color: var(--dm-text);
+}
+
+body.dark-mode .cart-freelance .card-subtitle {
+  color: var(--dm-accent-light) !important;
+}
+
+body.dark-mode .cart-freelance .card-text {
+  color: var(--dm-text-muted);
+}
+
+body.dark-mode .cart-freelance .text-muted {
+  color: var(--dm-text-subtle) !important;
+}
+
+/* Bouton "Voir plus de freelances" */
+body.dark-mode .cart-freelance ~ div .btn {
+  background-color: var(--dm-surface-2);
+  color: var(--dm-text);
+  border-color: var(--dm-border);
+}
+
+/* Offcanvas profil */
+body.dark-mode .offcanvas {
+  background-color: var(--dm-surface);
+  border-top: 1px solid var(--dm-border);
+}
+
+body.dark-mode .offcanvas-header {
+  border-bottom: 1px solid var(--dm-border);
+}
+
+body.dark-mode .offcanvas-title {
+  color: var(--dm-text);
+}
+
+body.dark-mode .offcanvas h1,
+body.dark-mode .offcanvas h5 {
+  color: var(--dm-text);
+}
+
+body.dark-mode .offcanvas p {
+  color: var(--dm-text-muted);
+}
+
+body.dark-mode .offcanvas .btn-close {
+  filter: invert(1) brightness(0.8);
+}
+
+/* Badges compétences */
+body.dark-mode .badge.bg-light {
+  background-color: var(--dm-surface-3) !important;
+  color: var(--dm-text) !important;
+  border: 1px solid var(--dm-border);
+}
+
+/* ============================================================
+   SECTION TARIFS
+   ============================================================ */
+body.dark-mode .tarifs {
+  background-color: var(--dm-bg);
+}
+
+body.dark-mode .tarifs > h1 {
+  color: var(--dm-text);
+}
+
+/* Cartes tarifaires */
+body.dark-mode .tarifs :nth-child(3) > div {
+  background-color: var(--dm-surface-2) !important;
+  border-color: var(--dm-border) !important;
+  color: var(--dm-text);
+}
+
+body.dark-mode .tarifs :nth-child(3) > div h5 {
+  color: var(--dm-text);
+}
+
+body.dark-mode .tarifs :nth-child(3) > div p {
+  color: var(--dm-text-muted);
+}
+
+body.dark-mode .tarifs :nth-child(3) > div .text-muted {
+  color: var(--dm-text-subtle) !important;
+  background: #000;;
+}
+
+/* Boutons des cartes tarifaires */
+body.dark-mode .tarifs .btn-outline-dark {
+  border-color: var(--dm-border);
+  color: var(--dm-text);
+  background-color: transparent;
+}
+
+body.dark-mode .tarifs .btn-outline-dark:hover {
+  background-color: var(--dm-text);
+  color: var(--dm-bg);
+}
+
+body.dark-mode .tarifs .btn-outline-dark.active {
+  background-color: var(--dm-accent);
+  border-color: var(--dm-accent);
+  color: #fff;
+}
+
+/* ============================================================
+   SECTION FAQ (ACCORDION)
+   ============================================================ */
+body.dark-mode .FAQ .accordion-item {
+  background-color: var(--dm-surface-2);
+  border: 1px solid var(--dm-border) !important;
+}
+
+body.dark-mode .FAQ .accordion-item:hover {
+  box-shadow: var(--dm-shadow-md);
+}
+
+body.dark-mode .accordion-button {
+  background-color: var(--dm-surface-2) !important;
+  color: var(--dm-text) !important;
+}
+
+body.dark-mode .accordion-button::after {
+  filter: invert(1) brightness(0.7);
+}
+
+body.dark-mode .accordion-button:not(.collapsed) {
+  background-color: var(--dm-surface-3) !important;
+  color: var(--dm-accent-light) !important;
+  box-shadow: none;
+}
+
+body.dark-mode .accordion-body {
+  background-color: var(--dm-surface);
+  color: var(--dm-text-muted);
+  border-top: 1px solid var(--dm-border);
+}
+
+body.dark-mode .accordion-body strong {
+  color: var(--dm-accent-light);
+}
+
+/* CTA section FAQ */
+body.dark-mode .action-tarifs {
+  background-color: #061828;
+  border: 1px solid var(--dm-border);
+}
+
+body.dark-mode .action-tarifs h1 {
+  color: var(--dm-text);
+}
+
+body.dark-mode .action-tarifs p {
+  color: var(--dm-text-muted);
+}
+
+/* ============================================================
+   PAGE À PROPOS
+   ============================================================ */
+body.dark-mode .Notre-Histoir {
+  background-color: var(--dm-bg);
+}
+
+body.dark-mode .Notre-Histoir > div > p {
+  color: var(--dm-accent);
+}
+
+body.dark-mode .Notre-Histoir > div > h1 {
+  color: var(--dm-text);
+}
+
+body.dark-mode .Notre-Histoir > div > h1 span {
+  color: var(--dm-accent-light);
+}
+
+body.dark-mode .Notre-Histoir > div .text-muted {
+  color: var(--dm-text-muted) !important;
+}
+
+/* Section valeurs */
+body.dark-mode .valeur-cardinale {
+  background-color: var(--dm-surface) !important;
+}
+
+body.dark-mode .valeur-cardinale h2 {
+  color: var(--dm-text);
+}
+
+body.dark-mode .valeur-cardinale > p {
+  color: var(--dm-text-muted);
+}
+
+body.dark-mode .card-vc {
+  background-color: var(--dm-surface-2);
+  border: 1px solid var(--dm-border) !important;
+}
+
+body.dark-mode .card-vc:hover {
+  box-shadow: var(--dm-shadow-md);
+  background-color: var(--dm-surface-3);
+}
+
+body.dark-mode .card-vc > div > i {
+  background-color: var(--dm-green-badge);
+  color: var(--dm-accent);
+}
+
+body.dark-mode .card-vc:hover > div > i {
+  background-color: var(--dm-accent);
+  color: #fff;
+}
+
+body.dark-mode .card-vc .card-title {
+  color: var(--dm-text);
+}
+
+body.dark-mode .card-vc .card-text,
+body.dark-mode .card-vc .text-muted {
+  color: var(--dm-text-muted) !important;
+}
+
+/* Section impact */
+body.dark-mode .impacte {
+  background-color: var(--dm-bg);
+}
+
+body.dark-mode .impacte > div > h2 {
+  color: var(--dm-text);
+}
+
+body.dark-mode .impacte > div > p {
+  color: var(--dm-text-muted);
+}
+
+/* Cards impact */
+body.dark-mode .row-1 .FA {
+  background-color: #061828;
+  border: 1px solid var(--dm-border);
+}
+
+body.dark-mode .row-1 .FA > div > i {
+  color: #132033;
+}
+
+body.dark-mode .row-1 .FA :nth-child(2) > h3 {
+  color: var(--dm-accent-light);
+}
+
+body.dark-mode .row-1 .FA :nth-child(2) > h5 {
+  color: var(--dm-text);
+}
+
+body.dark-mode .row-1 .FA :nth-child(2) > p {
+  color: var(--dm-text-muted);
+}
+
+body.dark-mode .row-2 .ETR {
+  background-color: var(--dm-accent);
+}
+
+body.dark-mode .row-2 .ETR h3,
+body.dark-mode .row-2 .ETR h5,
+body.dark-mode .row-2 .ETR p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body.dark-mode .row-2 .MIS {
+  background-color: var(--dm-surface-2);
+  border: 1px solid var(--dm-border);
+}
+
+body.dark-mode .row-2 .MIS h1 {
+  color: var(--dm-text);
+}
+
+body.dark-mode .row-2 .MIS h6 {
+  color: var(--dm-text-muted);
+}
+
+body.dark-mode .row-2 .PR {
+  background-color: rgba(110, 247, 187, 0.1);
+  border: 1px solid rgba(110, 247, 187, 0.2);
+}
+
+body.dark-mode .row-2 .PR h1 {
+  color: var(--dm-accent-light);
+}
+
+body.dark-mode .row-2 .PR h5 {
+  color: var(--dm-text-muted);
+}
+
+/* Équipe */
+body.dark-mode .equipe {
+  background-color: var(--dm-surface);
+}
+
+body.dark-mode .equipe h1 {
+  color: var(--dm-text);
+}
+
+body.dark-mode .equipe > p {
+  color: var(--dm-text-muted);
+}
+
+body.dark-mode .equipe > a {
+  color: var(--dm-text) !important;
+}
+
+body.dark-mode .equipe .cart-t {
+  background-color: var(--dm-surface-2);
+  border: 1px solid var(--dm-border);
+}
+
+body.dark-mode .equipe .cart-t .card-title {
+  color: var(--dm-text);
+}
+
+body.dark-mode .equipe .cart-t .card-text {
+  color: var(--dm-text-muted);
+}
+
+body.dark-mode .equipe .cart-t:hover {
+  box-shadow: var(--dm-shadow-md);
+  background-color: var(--dm-surface-3);
+}
+
+/* ============================================================
+   PAGE CONTACT
+   ============================================================ */
+body.dark-mode .hero-c {
+  background-color:black;
+}
+
+body.dark-mode .video {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+body.dark-mode .hero-c > div > div :nth-child(1).ER {
+  color: var(--dm-accent-light);
+}
+
+body.dark-mode .hero-c > div > div > h1 {
+  color: var(--dm-text);
+}
+
+body.dark-mode .hero-c > div > div > h1 > span {
+  color: var(--dm-accent-light);
+}
+
+body.dark-mode .hero-c > div > div :nth-child(3) {
+  color: var(--dm-text-muted);
+}
+
+/* Cartes contact (email/tel/adresse) */
+body.dark-mode .card-contact > div > div {
+  background-color: var(--dm-surface-2) !important;
+  border: 1px solid var(--dm-border) !important;
+}
+
+body.dark-mode .card-contact .card-title {
+  color: var(--dm-text);
+}
+
+body.dark-mode .card-contact .card-text {
+  color: var(--dm-text-muted);
+}
+
+body.dark-mode .card-contact .card-link {
+  color: var(--dm-text-subtle) !important;
+}
+
+body.dark-mode .card-contact .card-link:hover {
+  color: var(--dm-accent-light) !important;
+}
+
+body.dark-mode .card-contact > div > div:hover {
+  box-shadow: var(--dm-shadow-md);
+  border-color: var(--dm-surface-3) !important;
+}
+
+/* Formulaire */
+body.dark-mode .form {
+  background-color: var(--dm-surface) !important;
+  border: 1px solid var(--dm-border);
+  border-radius: 1.5em;
+}
+
+body.dark-mode .form h2 {
+  color: var(--dm-text);
+}
+
+body.dark-mode .form > p {
+  color: var(--dm-text-muted);
+}
+
+body.dark-mode .form-label {
+  color: var(--dm-text-subtle) !important;
+}
+
+body.dark-mode .form-control,
+body.dark-mode select.form-control {
+  background-color: var(--dm-surface-2);
+  border: 1px solid var(--dm-border);
+  color: var(--dm-text);
+}
+
+body.dark-mode .form-control::placeholder {
+  color: var(--dm-text-subtle);
+}
+
+body.dark-mode .form-control:focus,
+body.dark-mode select.form-control:focus {
+  background-color: var(--dm-surface-3);
+  border-color: var(--dm-accent);
+  color: var(--dm-text);
+  box-shadow: 0 0 0 3px var(--dm-accent-glow);
+}
+
+body.dark-mode select.form-control option {
+  background-color: var(--dm-surface-2);
+  color: var(--dm-text);
+}
+
+body.dark-mode .form .btn-dark {
+  background-color: var(--dm-accent);
+  border-color: var(--dm-accent);
+  color: #fff;
+  font-weight: bold;
+}
+
+body.dark-mode .form .btn-dark:hover {
+  background-color: #059669;
+  border-color: #059669;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+body.dark-mode footer .bg-light,
+body.dark-mode footer .container-fluid.bg-light {
+  background-color: var(--dm-surface) !important;
+  border-top: 1px solid var(--dm-border);
+}
+
+body.dark-mode footer .navbar-brand {
+  color: var(--dm-text) !important;
+}
+
+body.dark-mode footer p {
+  color: var(--dm-text-muted);
+}
+
+body.dark-mode footer h6 {
+  color: var(--dm-text);
+}
+
+body.dark-mode footer a.text-reset {
+  color: var(--dm-text-muted) !important;
+  transition: color 0.2s;
+}
+
+body.dark-mode footer a.text-reset:hover {
+  color: var(--dm-accent-light) !important;
+}
+
+body.dark-mode footer .text-dark {
+  color: var(--dm-text-muted) !important;
+}
+
+body.dark-mode footer .text-dark:hover {
+  color: var(--dm-accent-light) !important;
+}
+
+/* Newsletter input */
+body.dark-mode footer .form-control {
+  background-color: var(--dm-surface-2);
+  border: 1px solid var(--dm-border);
+  color: var(--dm-text);
+}
+
+body.dark-mode footer .btn.btn-dark {
+  background-color: var(--dm-accent);
+  border-color: var(--dm-accent);
+}
+
+body.dark-mode footer .btn.btn-dark:hover {
+  background-color: #059669;
+}
+
+/* ============================================================
+    BOOTSTRAP UTILITAIRES
+   ============================================================ */
+
+/* bg-light partout */
+body.dark-mode .bg-light {
+  background-color: var(--dm-surface) !important;
+}
+
+/* text-muted */
+body.dark-mode .text-muted {
+  color: var(--dm-text-muted) !important;
+}
+
+/* text-dark (icônes réseaux sociaux etc.) */
+body.dark-mode .text-dark {
+  color: var(--dm-text-muted) !important;
+}
+
+/* shadow-sm / shadow-lg */
+body.dark-mode .shadow-sm {
+  box-shadow: var(--dm-shadow-sm) !important;
+}
+
+body.dark-mode .shadow-lg {
+  box-shadow: var(--dm-shadow-md) !important;
+}
+
+/* Cartes Bootstrap génériques */
+body.dark-mode .card {
+  background-color: var(--dm-surface-2);
+  border-color: var(--dm-border);
+}
+
+/* ============================================================
+   TRANSITION GLOBALE 
+   ============================================================ */
+body,
+body *,
+body.dark-mode,
+body.dark-mode * {
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.25s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Exceptions : ne pas ralentir les animations de la page */
+body *,
+body.dark-mode * {
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.25s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.retour {
+  position: fixed;
+  bottom: 30px; /* Place le bouton à 30px du bas */
+  right: 30px;  /* Place le bouton à 30px de la droite */
+  width: 50px;  /* Largeur fixe */
+  height: 50px; /* Hauteur fixe */
+  
+  /* Aligne parfaitement l'icône FontAwesome au centre du rond */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color:var(--accent-hover); 
+  color: #ffffff;
+  border: none;
+  border-radius: 50%; 
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 999;
+  
+  /* On démarre invisible à opacity: 0 */
+  opacity: 1;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease;
+}
+
+.retour.apparait {
+  opacity: 1;
+  visibility: visible;
+}
+
+.retour:hover {
+  transform: translateY(-5px); 
+}
