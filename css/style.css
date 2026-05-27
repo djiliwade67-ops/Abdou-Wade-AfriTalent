@@ -160,7 +160,7 @@ margin-top: 20rem;
 }
 
  .hero > div :nth-child(2) .img-1{
-    margin-left: 6em;
+    /* margin-left: 6em; */
     rotate: 2.5deg;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
@@ -439,6 +439,10 @@ margin-top: 20rem;
     color: #00714D;
 }
 
+.img-2{
+  height: 2rem;
+}
+
 .btn-2{
     background-color:#006C49;
     color: var(--white);
@@ -565,6 +569,10 @@ margin-top: 20rem;
     font-size: 3.5em;
 }
 
+.carte-fr{
+  border: solid 2px rgb(49, 49, 49);
+}
+
 /* ============================
    CARTES TARIFAIRES
    ============================ */
@@ -644,16 +652,18 @@ margin-top: 20rem;
     color: #006C49;
 }
 
-.Notre-Histoir :nth-child(2) > img{
+.Notre-Histoir :nth-child(2) > .hero-image{
     object-fit: cover;
     transition: 0.5s;
     overflow: hidden;
-    &:hover{
-        transform: scale(1.04);
+   
+}
+
+ .image-container > img :hover{
+        transform: scale(4);
      
     }
  
-}
 
 .image-container{
     overflow: hidden;
@@ -1831,4 +1841,182 @@ body.dark-mode * {
 
 .retour:hover {
   transform: translateY(-5px); 
+}
+
+/* ============================================================
+   TRANSITION GLOBALE 
+   ============================================================ */
+.section-anime {
+    /* J'ai renommé l'animation pour que ce soit plus clair */
+    animation: zoomUp linear both; 
+    animation-timeline: view();
+    /* Les réglages de la zone de déclenchement restent les mêmes */
+    animation-range: entry 5% cover 25%;
+}
+
+@keyframes zoomUp {
+    from {
+        opacity: 0;
+        /* On combine : décalé de 40px vers le bas ET réduit à 85% de sa taille */
+        transform: translateY(40px) scale(0.80) ; 
+    }
+    to {
+        opacity: 1;
+        /* On combine : retour à la position 0 ET taille normale à 100% (1) */
+        transform: translateY(0) scale(1) ; 
+    }
+}
+  /* HERO*/
+/* --- 1. L'animation du Titre --- */
+.hero-titre {
+    /* Invisible par défaut */
+    opacity: 0; 
+    /* L'animation dure 1 seconde, avec un freinage naturel (ease-out) */
+    animation: fadeUpSimple 1s ease-out 0.2s forwards;
+}
+
+@keyframes fadeUpSimple {
+    from {
+        opacity: 0;
+        transform: translateY(2.5rem); /* Démarre juste 30px plus bas */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Remonte à sa position normale */
+    }
+}
+
+/* --- 2. L'animation de l'Image --- */
+.hero-image {
+    opacity: 0; 
+    /* La même logique, mais avec "0.3s" avant "forwards" pour le délai d'attente */
+    animation: fadeInImage 1s ease-out 0.5s forwards;
+}
+
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+        transform: scale(0.9); /* Un zoom de départ très très léger */
+    }
+    to {
+        opacity: 1;
+        transform: scale(1); /* Taille normale */
+    }
+}
+
+.etiquette {
+    /* Invisible par défaut */
+    opacity: 0; 
+    /* L'animation dure 1 seconde, avec un freinage naturel (ease-out) */
+    animation: etiquette 1s ease-out forwards;
+}
+
+@keyframes etiquette {
+    from {
+        opacity: 0;
+        transform: scale(1.5); /* Démarre juste 30px plus bas */
+       
+    }
+    to {
+        opacity: 1;
+        transform: scale(1); /* Remonte à sa position normale */
+       
+}
+}
+
+.video {
+    opacity: 0;
+    /* La même logique, mais avec "0.3s" avant "forwards" pour le délai d'attente */
+    animation: video 1.5s ease-in 0.2s forwards;
+}
+
+@keyframes video {
+    from {
+        opacity: 0;
+        transform: translateX(8rem); /* Un zoom de départ très très léger */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Taille normale */
+    }
+}
+
+.carte-fr{
+     opacity: 0;
+    transform: translateY(4rem);
+    animation: slide-up 0.9s ease-out 0.5s forwards;
+    /* délai incrémenté via attr style= --i: index*/
+    animation-delay: calc(var(--i, 0) * .8s);
+
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(2rem)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.pro{
+  opacity:0;
+  animation: pro 1s ease-out 0.6s forwards;
+}
+
+    @keyframes pro {
+    from {
+        opacity: 0;
+        transform: scale(1.2); /* Un zoom de départ très très léger */
+    }
+    to {
+        opacity: 1;
+        transform: scale(1); /* Taille normale */
+    }
+}
+
+/* ============================================================
+   ANIMATION FOOTER — FADE + SLIDE UP
+   ============================================================ */
+
+/* État initial : invisible et décalé vers le bas */
+.footer-col,
+.footer-brand,
+.footer-newsletter,
+footer .footer-hr,
+footer .footer-bottom {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+/* Quand l'animation se déclenche */
+.footer-visible .footer-col,
+.footer-visible .footer-brand,
+.footer-visible .footer-newsletter,
+.footer-visible .footer-hr,
+.footer-visible .footer-bottom {
+  animation: footerSlideUp 0.6s ease forwards;
+}
+
+/* Délais décalés pour chaque colonne */
+.footer-visible .footer-brand      { animation-delay: 0.1s; }
+.footer-visible .footer-col:nth-child(1) { animation-delay: 0.2s; }
+.footer-visible .footer-col:nth-child(2) { animation-delay: 0.3s; }
+.footer-visible .footer-newsletter  { animation-delay: 0.4s; }
+.footer-visible .footer-hr   { animation-delay: 0.5s; }
+.footer-visible .footer-bottom { animation-delay: 0.6s; }
+
+/* L'animation elle-même */
+@keyframes footerSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
