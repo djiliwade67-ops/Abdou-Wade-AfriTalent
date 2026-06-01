@@ -110,22 +110,25 @@ rel="stylesheet">
         </section>
 
                 <!--section formulaire-->
-                <section class="form container section-anime my-5 p-4 d-flex flex-column bg-light">
+                <section class=" container section-anime my-5 p-4 d-flex flex-column bg-light">
                         <!-- === FORMULAIRE DE CONTACT === -->
                         <h2 class="text-center p-3">Envoyez-nous un message</h2>
                         <p class="text-center mb-5">Remplissez le formulaire ci-dessous et nous reviendrons vers vous rapidement.</p>
-                    <form action="" class="row gy-3 mt-4 w-75 align-self-center">
+                    <form action="" class="row gy-3 mt-4 w-75 align-self-center form" novalidate>
                         <div class="col-12 col-md-6">
-                            <label for="Nom" class="form-label text-muted">NOM</label>
-                            <input type="Name" class="form-control " id="Nom">
+                            <label for="nom" class="form-label text-muted">NOM</label>
+                            <input type="Name" class="form-control " id="nom">
+                              <span class="erreur" id="erreur-nom"></span>
                         </div>
                         <div class="col-12 col-md-6">
                              <label for="Prenom" class="form-label text-muted">PRENOM</label>
                             <input type="prenom" class="form-control" id="prenom" >
+                            <span class="erreur" id="erreur-prenom"></span>
                         </div>
                         <div class="col-12 col-md-6">
                             <label for="email" class="form-label text-muted">EMAIL</label>
                             <input type="email" class="form-control" id="email" >
+                                <span class="erreur" id="erreur-email"></span>
                         </div>
                         <div class="col-12 col-md-6">
                               <label for="info" class="form-label text-muted">SUJET</label>
@@ -135,15 +138,18 @@ rel="stylesheet">
                                 <option value="freelance">Devenier Freelance</option>
                                 <option value="support">Support technique</option>
                                 <option value="Autre">Autre</option>
-                              </select>
+                                </select>
+                                 <span class="erreur" id="erreur-info"></span>
                             
                         </div>
                         <div class="col-12 ">
                              <label for="message" class="form-label text-muted">Message</label>
                              <textarea name="message" id="message" placeholder="Comment pouvons-nous vous aider ?" class="form-control" rows="5"></textarea>
+                             <span class="erreur" id="erreur-message"></span>
                         </div>
-                        <div class="col d-flex justify-content-center">
-                            <button type="submit" class="btn btn-dark w-50 my-3  rounded-pill py-3 ">Envoyer le message</button>
+                        <div class="col-12 submit ">
+                            <button type="submit" class="btn btn-dark w-50 my-3 rounded-pill py-3 ">Envoyer le message</button>
+                             <p id="succes"></p>
                         </div>
                     </form>
                       

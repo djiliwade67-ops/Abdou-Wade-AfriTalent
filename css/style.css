@@ -476,7 +476,7 @@ margin-top: 20rem;
         color:#616060;
     }
 }
-.cart-freelance .container > button:focus{
+.cart-freelance .container > .active{
     background-color: #006C49;
     color: var(--white);
 }
@@ -804,7 +804,6 @@ margin-top: 20rem;
     
 }
 
-
 .video{
     height: 100%;
 }
@@ -830,6 +829,23 @@ margin-top: 20rem;
 }
 }
 
+.form{
+  border-radius: 1.5rem;
+}
+
+.submit{
+  display: flex;
+  flex-direction: column;
+  & > button{
+    align-self: center;
+    background-color: #059669;
+    font-weight: bold;
+  }
+  & > P{
+     align-self: center;
+  }
+}
+
 /* ============================================================
    AFRITALENT — DARK MODE
    ============================================================ */
@@ -853,6 +869,7 @@ body.dark-mode {
   --dm-shadow-sm:    0 4px 16px rgba(0, 0, 0, 0.4);
   --dm-shadow-md:    0 10px 40px rgba(0, 0, 0, 0.5);
   --dm-shadow-green: 0 10px 40px rgba(16, 185, 129, 0.25);
+   --dm-shadow-sm:    0 4px 16px rgba(251, 47, 47, 0.4);
 }
 
 /* ============================================================
@@ -2019,4 +2036,28 @@ footer .footer-bottom {
     opacity: 1;
     transform: translateY(0);
   }
+}
+/* FORMULAIRE*/
+.erreur {
+    color: red;
+    font-size: 0.85em;
+    margin: 1em;
+    display: block;
+    /* border: solid 2px red */
+}
+
+#succes {
+    background-color: #D1FAE5;
+    color: #065F46;
+    border-left: 4px solid #10B981;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 15px;
+    font-weight: 600;
+    display: none; 
+}
+
+#succes.visible {
+    display: block;
+    opacity: 1;
 }

@@ -1,6 +1,5 @@
 /* ============================================================
-   AFRITALENT — DARK MODE TOGGLE
-   À coller dans votre fichier js/main.js
+   AFRITALENT — DARK MODE
    ============================================================ */
 
   const moonIcon = document.querySelector('.fa-moon, .fa-sun');
@@ -159,3 +158,101 @@ const footerObserver = new IntersectionObserver((entries) => {
 if (footer) {
   footerObserver.observe(footer);
 }
+
+
+// === FILTRE CARTE ===
+
+// Filtre Carte
+let bouttons = document.querySelectorAll(".filtre")
+let cartes = document.querySelectorAll(".card-frelance")
+
+bouttons.forEach(function(bouton){
+ bouton.addEventListener('click', function(){
+   bouttons.forEach(function(b){
+      b.classList.remove("active")
+   })
+      bouton.classList.add("active")
+  let categorie = bouton.dataset.categorie
+    cartes.forEach(function(carte){
+        if(categorie == 'tous'){
+            carte.style.display= 'block'
+        }
+       else if(categorie == carte.dataset.categorie){
+            carte.style.display= 'block'
+        }else{
+              carte.style.display= 'none'
+        }
+    })
+  })
+})
+
+
+// === FORMULAIRE ===
+
+let form = document.querySelector(".form")
+let nom = document.getElementById("nom")
+let email = document.getElementById("email")
+let succes = document.getElementById("succes")
+let prenom = document.getElementById("prenom")
+let message = document.getElementById("message")
+let selection = document.getElementById("info")
+
+   let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+form.addEventListener('submit', function (event){
+     event.preventDefault()
+      
+     if (nom.value.length < 2){
+        document.getElementById('erreur-nom').textContent = 'Le nom doit contenir au moins 2 caractéres.'
+        nom.style.border = '1px solid red' 
+         nom.style.boxShadow = ' 4px 4px 15px rgba(189, 75, 75, 0.4)' 
+     }else{  document.getElementById('erreur-nom').textContent =''
+        nom.style.border = '1px solid green'
+        nom.style.boxShadow = ' 4px 4px 15px rgba(46, 218, 80, 0.4)' 
+
+     }
+     if (prenom.value.length < 2){
+        document.getElementById('erreur-prenom').textContent = 'Le prenom doit contenir au moins 2 caractéres.'
+        prenom.style.border = '1px solid red' 
+         prenom.style.boxShadow = ' 4px 4px 15px rgba(184, 73, 73, 0.4)'  
+     }else{  document.getElementById('erreur-prenom').textContent =''
+          prenom.style.border = '1px solid green'
+        prenom.style.boxShadow = ' 4px 4px 15px rgba(46, 218, 80, 0.4)'   
+     }
+
+     if(regex.test(email.value)){
+        document.getElementById('erreur-email').textContent =''
+          email.style.border = '1px solid green'
+        email.style.boxShadow = ' 4px 4px 15px rgba(46, 218, 80, 0.4)' 
+     }else{document.getElementById('erreur-email').textContent ='email incorrect'
+          email.style.border = '1px solid red' 
+        email.style.boxShadow = ' 4px 4px 15px rgba(189, 83, 83, 0.4)'  
+     }
+
+     if(message.value.length < 19){
+      document.getElementById('erreur-message').textContent ='le message ne doit pas etre moins de 20 caractére'
+         message.style.border = '1px solid red' 
+        message.style.boxShadow = ' 4px 4px 15px rgba(189, 83, 83, 0.4)' 
+     }else{ document.getElementById('erreur-message').textContent =''
+          message.style.border = '1px solid green'
+        message.style.boxShadow = ' 4px 4px 15px rgba(46, 218, 80, 0.4)'
+     }
+
+     if(selection.value == 'demande'){
+      document.getElementById('erreur-info').textContent ='veuillez faire un choix'
+         selection.style.border = '1px solid red' 
+        selection.style.boxShadow = ' 4px 4px 15px rgba(189, 83, 83, 0.4)' 
+     }else{ document.getElementById('erreur-info').textContent =''
+          selection.style.border = '1px solid green'
+        selection.style.boxShadow = ' 4px 4px 15px rgba(46, 218, 80, 0.4)' 
+     }
+    
+      if(nom.value != '' && regex.test(email.value) && prenom.value != ''){
+        document.getElementById('succes').textContent ='Formulaire envoyé'
+        succes.classList.add("visible")
+            form.style.border = '1px solid green'
+            form.style.boxShadow = ' 4px 4px 15px rgba(46, 218, 80, 0.4)' 
+     }
+
+})
+
