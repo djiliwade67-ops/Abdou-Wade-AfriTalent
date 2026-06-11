@@ -10,472 +10,473 @@
     <!-- Votre feuille de style personnelle -->
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/9fd1c84033.js" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
     <!-- === NAVBAR FIXE === -->
     <!-- Barre de navigation permanente en haut avec logo, menu et boutons -->
     <header>
-            <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
-                <!-- Container principal avec flex layout pour espace entre éléments -->
-                <div class="container-lg d-flex justify-content-between container-dark">
-                    <!-- Logo AfriTalent avec "afri" en vert et "talent" en noir -->
-                    <a class="navbar-brand text-uppercase fw-bold" href="index.html">
-                        <span class="bg-success bg-gradient p-1 rounded-3 text-light">afri</span>talent
-                    </a>
+        <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+            <!-- Container principal avec flex layout pour espace entre éléments -->
+            <div class="container-lg d-flex justify-content-between container-dark">
+                <!-- Logo AfriTalent avec "afri" en vert et "talent" en noir -->
+                <a class="navbar-brand text-uppercase fw-bold" href="index.html">
+                    <span class="bg-success bg-gradient p-1 rounded-3 text-light">afri</span>talent
+                </a>
 
-                    <!-- Menu navigation (effondrable en mobile) -->
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarcollapse">
-                        <ul class="navbar-nav d-flex justify-content-center nav-dark">
-                            <!-- Liens du menu principal -->
-                            <li class="nav-item mx-2">
-                                <a class="nav-link active" href="index.html">Accueil</a>
-                            </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link" href="freelances.html">Freelances</a>
-                            </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link" href="tarifs.html">Tarifs</a>
-                            </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link" href="about.html"> À propos</a>
-                            </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link" href="about.html#valeur"> Blog</a>
-                            </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link" href="contact.html"> Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Éléments droits: icône lune, bouton CTA et menu hamburger -->
-                    <div class="d-flex ms-auto align-items-center">
-                        <!-- Icône lune pour dark mode (non fonctionnel pour le moment) -->
-                        <i class="fa-regular fa-moon my-2 mx-3 ms-auto "></i>
-                        <!-- Bouton d'appel à l'action, masqué en mobile (d-none d-md-block) -->
-                        <a class="btn  btn-success d-none d-lg-block mx-1 d-sm-none d-md-none rounded-pill" href="contact.html"
-                            role="button">Rejoindre
-                            AfriTalent</a>
-                        <!-- Bouton hamburger pour mobile (affiche/cache le menu) -->
-                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon px-2"></span>
-                        </button>
-
-                    </div>
+                <!-- Menu navigation (effondrable en mobile) -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarcollapse">
+                    <ul class="navbar-nav d-flex justify-content-center nav-dark">
+                        <!-- Liens du menu principal -->
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="freelances.html">Freelances</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="tarifs.html">Tarifs</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="about.html"> À propos</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="about.html#valeur"> Blog</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="contact.html"> Contact</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-        <!-- === SECTION HERO === -->
-        <!-- Section principale avec titre, description et boutons d'action -->
-        <main>
-                <section class="hero container-fluid my-5 py-3 section-anime">
-                    <!-- Grille 2 colonnes: texte à gauche, image à droite -->`
-                    <div class="row d-flex">
-                        <!-- Colonne texte: titre, description et CTA -->
-                        <div class="col-12 col-md-6 mb-2 ps-5 ">
-                            <!-- Badge "Global Talent Hub" -->
-                            <p class="mt-5  text-center text-1 etiquette">Global Talent Hub</p>
-                            <!-- Titre principal avec "l'Afrique" en couleur -->
-                            <h1 class="my-4 fw-bold hero-titre">Le pont d'élite entre <br> <span>l'Afrique</span> et le monde.</h1>
-                            <!-- Description du service -->
-                            <p>Connectez-vous avec les meilleurs profils technologiques africains. Une sélection
-                                rigoureuse
-                                pour des projets d'exception, sans <br> frontières</p>
-                            <!-- Deux boutons CTA: pour chercheurs et freelances -->
-                            <button class="btn-1 me-2 my-2 rounded-pill">Je cherche un
-                                Freelance</button>
-                            <button class="btn-1 btn-outline my-2  rounded-pill">Je suis un
-                                Freelance</button>
-                        </div>
-                      
-                         <div class="col-12 col-md-6 mb-2 d-flex justify-content-center  ">
-                            <img src="image/img.acc.png" alt="Image d'illustration"
-                                class="img-fluid img-computer rounded-5 img-1 pt-2 hero-image">
-                        </div>
+                <!-- Éléments droits: icône lune, bouton CTA et menu hamburger -->
+                <div class="d-flex ms-auto align-items-center">
+                    <!-- Icône lune pour dark mode (non fonctionnel pour le moment) -->
+                    <i class="fa-regular fa-moon my-2 mx-3 ms-auto "></i>
+                    <!-- Bouton d'appel à l'action, masqué en mobile (d-none d-md-block) -->
+                    <a class="btn  btn-success d-none d-lg-block mx-1 d-sm-none d-md-none rounded-pill"
+                        href="contact.html" role="button">Rejoindre
+                        AfriTalent</a>
+                    <!-- Bouton hamburger pour mobile (affiche/cache le menu) -->
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon px-2"></span>
+                    </button>
 
-                    
-                </section>
-                <!-- === STATISTIQUES === -->
-                <!-- Affichage des chiffres clés de la plateforme -->
-                <div class="container-fluid-1">
-                    <div class="row mt-5 pt-4 pb-2">
-                        <div class="col-12 col-md-4 ">
-                            <h2 class="text-center fw-bold compteur" data-target="2500">+0</h2>
-                            <p class="text-center">Freelances experts</p>
-                        </div>
-                        <div class="col-12 col-md-4 ">
-                            <h2 class="text-center fw-bold compteur" data-target="800">+0</h2>
-                            <p class="text-center">Entreprises Partenaires</p>
-                        </div>
-                        <div class="col-12 col-md-4 ">
-                            <h2 class="text-center fw-bold compteur" data-target="4600">+0</h2>
-                            <p class="text-center">Missions Accomplies</p>
-                        </div>
-                    </div>
                 </div>
-                <!-- <-- Section "Comment ça marche ?" -->
-                <section class="comment-ca-marche reveal-moderne section-anime">
-                    <div class="container mb-2 mt-5 py-2 mx-2">
-                        <h2 class="fw-bold">Comment ça marche ?</h2>
-                        <p class="mb-5">Un processus fluide pour transformer vos idées en réalité technologique.</p>
+            </div>
+        </nav>
+    </header>
+    <!-- === SECTION HERO === -->
+    <!-- Section principale avec titre, description et boutons d'action -->
+    <main>
+        <section class="hero container-fluid my-5 py-3 section-anime">
+            <!-- Grille 2 colonnes: texte à gauche, image à droite -->`
+            <div class="row d-flex">
+                <!-- Colonne texte: titre, description et CTA -->
+                <div class="col-12 col-md-6 mb-2 ps-5 ">
+                    <!-- Badge "Global Talent Hub" -->
+                    <p class="mt-5  text-center text-1 etiquette">Global Talent Hub</p>
+                    <!-- Titre principal avec "l'Afrique" en couleur -->
+                    <h1 class="my-4 fw-bold hero-titre">Le pont d'élite entre <br> <span>l'Afrique</span> et le monde.
+                    </h1>
+                    <!-- Description du service -->
+                    <p>Connectez-vous avec les meilleurs profils technologiques africains. Une sélection
+                        rigoureuse
+                        pour des projets d'exception, sans <br> frontières</p>
+                    <!-- Deux boutons CTA: pour chercheurs et freelances -->
+                    <button class="btn-1 me-2 my-2 rounded-pill">Je cherche un
+                        Freelance</button>
+                    <button class="btn-1 btn-outline my-2  rounded-pill">Je suis un
+                        Freelance</button>
+                </div>
+
+                <div class="col-12 col-md-6 mb-2 d-flex justify-content-center  ">
+                    <img src="image/img.acc.png" alt="Image d'illustration"
+                        class="img-fluid img-computer rounded-5 img-1 pt-2 hero-image">
+                </div>
+
+
+        </section>
+        <!-- === STATISTIQUES === -->
+        <!-- Affichage des chiffres clés de la plateforme -->
+        <div class="container-fluid-1">
+            <div class="row mt-5 pt-4 pb-2">
+                <div class="col-12 col-md-4 ">
+                    <h2 class="text-center fw-bold compteur" data-target="2500">+0</h2>
+                    <p class="text-center">Freelances experts</p>
+                </div>
+                <div class="col-12 col-md-4 ">
+                    <h2 class="text-center fw-bold compteur" data-target="800">+0</h2>
+                    <p class="text-center">Entreprises Partenaires</p>
+                </div>
+                <div class="col-12 col-md-4 ">
+                    <h2 class="text-center fw-bold compteur" data-target="4600">+0</h2>
+                    <p class="text-center">Missions Accomplies</p>
+                </div>
+            </div>
+        </div>
+        <!-- <-- Section "Comment ça marche ?" -->
+        <section class="comment-ca-marche reveal-moderne section-anime">
+            <div class="container mb-2 mt-5 py-2 mx-2">
+                <h2 class="fw-bold">Comment ça marche ?</h2>
+                <p class="mb-5">Un processus fluide pour transformer vos idées en réalité technologique.</p>
+
+            </div>
+
+
+            <div class="container-fluid  grid">
+                <div class="row">
+                    <div class="col-12 col-md-8 mb-4 MI p-4 rounded-3 d-flex flex-column mx-2 ">
+                        <div class="align-self-end my-4">
+                            <i class="fa-solid fa-arrows-down-to-people fa-6x fa-md-2x mb-3"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-magnifying-glass-plus fs-1 my-5"></i>
+                            <p><strong>1. Match Intelligent</strong></p>
+                            <div class="row">
+                                <div class="col-12 col-md-9 col-lg-6 mt-2">
+                                    <p class="py-1">
+                                        Notre algorithme et nos recruteurs experts identifient le profil parfait
+                                        pour
+                                        vos
+                                        besoins spécifiques en moins de 48h.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
-
-
-                    <div class="container-fluid  grid">
-                        <div class="row">
-                            <div class="col-12 col-md-8 mb-4 mb-md-1 MI p-4 rounded-3 d-flex flex-column mx-2 ">
-                                <div class="align-self-end my-4">
-                                    <i class="fa-solid fa-arrows-down-to-people fa-6x fa-md-2x mb-3"></i>
+                    <div class="col-12 col-md me-4 me-md-3    d-flex flex-column  ">
+                        <div class="row  d-flex flex-column">
+                            <div class="col-12 col-md-6 d-flex flex-column w-100 mb-2 LD p-3  mx-2 rounded-3">
+                                <div class="align-self-start my-4 mt-3">
+                                    <i class="fa-solid fa-shield-halved fs-3 align-self-start mb-3"></i>
                                 </div>
                                 <div>
-                                    <i class="fa-solid fa-magnifying-glass-plus fs-1 my-5"></i>
-                                    <p><strong>1. Match Intelligent</strong></p>
-                                    <div class="row">
-                                        <div class="col-12 col-md-9 col-lg-6 mt-2">
-                                            <p class="py-1">
-                                                Notre algorithme et nos recruteurs experts identifient le profil parfait
-                                                pour
-                                                vos
-                                                besoins spécifiques en moins de 48h.
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <strong>2. Lancement Direct</strong>
+
+                                    <p class="py-2">Démarrez votre projet immédiatement avec une communication
+                                        fluide et des
+                                        outils collaboratifs intégrés.</p>
+
+
                                 </div>
-
                             </div>
-                            <div class="col-12 col-md me-4 me-md-3    d-flex flex-column  ">
-                                <div class="row  d-flex flex-column">
-                                    <div class="col-12 col-md-6 d-flex flex-column w-100 mb-2 LD p-3  mx-2 rounded-3">
-                                        <div class="align-self-start my-4 mt-3">
-                                            <i class="fa-solid fa-shield-halved fs-3 align-self-start mb-3"></i>
-                                        </div>
-                                        <div>
-                                            <strong>2. Lancement Direct</strong>
-
-                                            <p class="py-2">Démarrez votre projet immédiatement avec une communication
-                                                fluide et des
-                                                outils collaboratifs intégrés.</p>
-
-
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6 d-flex flex-column w-100 LR p-3 mx-2 mt-3 rounded-3">
-                                        <div class="align-self-start my-4 mt-3">
-                                            <i class="fa-solid fa-rocket fs-3 align-self-start mb-3 "></i>
-                                        </div>
-                                        <div>
-                                            <strong>3. Lancement Rapide</strong>
-                                            <p class="py-2">
-                                                Démarrez votre projet en quelques jours, avec un suivi dédié et une
-                                                communication fluide.
-                                            </p>
-                                        </div>
-                                    </div>
+                            <div class="col-12 col-md-6 d-flex flex-column w-100 LR p-3 mx-2 mt-3 rounded-3">
+                                <div class="align-self-start my-4 mt-3">
+                                    <i class="fa-solid fa-rocket fs-3 align-self-start mb-3 "></i>
                                 </div>
-
-                            </div>
-                        </div>
-
-
-
-                        <!-- <div class="row w-100 mt-3  px-3 p-5 bg-success rounded-3 ms-1  mt-md-4 "> -->
-                        <div class="row d-flex w-100 mt-3  px-3 p-5 SX rounded-3 ms-0  mt-md-4 mb-3">
-                            <div class="d-flex align-self-start">
-                                <i class=" fa-solid fa-award  "></i>
-                                <div class="mx-4 mt-1 "> <strong>4. Suivi et Excellence</strong>
-                                    <p>Nous assurons un suivi de qualité tout au long de la mission pour garantir votre
-                                        succès total.</p>
+                                <div>
+                                    <strong>3. Lancement Rapide</strong>
+                                    <p class="py-2">
+                                        Démarrez votre projet en quelques jours, avec un suivi dédié et une
+                                        communication fluide.
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
-                </section>
-                <!-- <-- Section "Nos Services" -->
-                <section class="categories section-anime ">
-                    <div class="container-fluid d-flex flex-column align-items-center py-5">
-                        <p class="fw-small">Expertises</p>
-                        <h2 class="fw-bold mb-5">Trouvez l'expert qu'il vous faut</h2>
-                        <!-- Cartes de services premier ranger -->
-                        <div class="row">
-                            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                                <div class="card cart-t">
-                                    <i class="fa-solid fa-code p-3"></i>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Web Development</h5>
-                                        <p class="card-text">Full-stack, React, Node.js, Python. Des développeurs
-                                            capables
-                                            de bâtir des infrastructures scalables.</p>
-                                        <a href="#" class="btn">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                                <div class="card cart-t">
-                                    <i class="fa-solid fa-pen-ruler p-3"></i>
-                                    <div class="card-body">
-                                        <h5 class="card-title">UI/UX Design</h5>
-                                        <p class="card-text">Product Design, Research, Visual identity. Créez des
-                                            expériences mémorables et centrées utilisateur.</p>
-                                        <a href="#" class="btn">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                                <div class="card cart-t">
-                                    <i class="fa-solid fa-arrows-to-dot p-3"></i>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Digital Marketing</h5>
-                                        <p class="card-text">Growth hacking, SEO, Content strategy. Accélérez votre
-                                            visibilité sur le marché global et attirez plus de clients.</p>
-                                        <a href="#" class="btn">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                </div>
 
-                            <!-- Cartes de services deuxieme ranger -->
 
-                            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                                <div class="card cart-t">
-                                    <i class="fa-solid fa-robot p-3"></i>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Data & AI</h5>
-                                        <p class="card-text">Machine Learning, Data Engineering. Exploitez la puissance
-                                            de
-                                            vos données pour décider de votre stratégie.</p>
-                                        <a href="#" class="btn">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+
+                <!-- <div class="row w-100 mt-3  px-3 p-5 bg-success rounded-3 ms-1  mt-md-4 "> -->
+                <div class="row d-flex w-100 mt-3  px-3 p-5 SX rounded-3 ms-0  mt-md-4 mb-3">
+                    <div class="d-flex align-self-start">
+                        <i class=" fa-solid fa-award  "></i>
+                        <div class="mx-4 mt-1 "> <strong>4. Suivi et Excellence</strong>
+                            <p>Nous assurons un suivi de qualité tout au long de la mission pour garantir votre
+                                succès total.</p>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+        <!-- <-- Section "Nos Services" -->
+        <section class="categories section-anime ">
+            <div class="container-fluid d-flex flex-column align-items-center py-5">
+                <p class="fw-small">Expertises</p>
+                <h2 class="fw-bold mb-5">Trouvez l'expert qu'il vous faut</h2>
+                <!-- Cartes de services premier ranger -->
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card cart-t">
+                            <i class="fa-solid fa-code p-3"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Web Development</h5>
+                                <p class="card-text">Full-stack, React, Node.js, Python. Des développeurs
+                                    capables
+                                    de bâtir des infrastructures scalables.</p>
+                                <a href="#" class="btn">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card cart-t">
+                            <i class="fa-solid fa-pen-ruler p-3"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">UI/UX Design</h5>
+                                <p class="card-text">Product Design, Research, Visual identity. Créez des
+                                    expériences mémorables et centrées utilisateur.</p>
+                                <a href="" class="btn">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card cart-t">
+                            <i class="fa-solid fa-arrows-to-dot p-3"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Digital Marketing</h5>
+                                <p class="card-text">Growth hacking, SEO, Content strategy. Accélérez votre
+                                    visibilité sur le marché global et attirez plus de clients.</p>
+                                <a href="#" class="btn">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cartes de services deuxieme ranger -->
+
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card cart-t">
+                            <i class="fa-solid fa-robot p-3"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Data & AI</h5>
+                                <p class="card-text">Machine Learning, Data Engineering. Exploitez la puissance
+                                    de
+                                    vos données pour décider de votre stratégie.</p>
+                                <a href="#" class="btn">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card cart-t">
+                            <i class="fa-regular fa-pen-to-square p-3"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Tech Writing</h5>
+                                <p class="card-text">Documentation, White papers, API docs. Communiquez
+                                    clairement
+                                    vos solutions techniques.</p>
+                                <a href="#" class="btn">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card cart-t">
+                            <i class="fa-regular fa-cloud p-3"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">DevOps & Cloud</h5>
+                                <p class="card-text">AWS, Azure, Docker, Kubernetes. Assurez la stabilité et
+                                    l'automatisation de vos systèmes avec des outils de DevOps.</p>
+                                <a href="#" class="btn">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-temoignages section-anime" id="temoignage ">
+            <div class="container ">
+
+                <!-- En-tête de la section -->
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <h2 class="fw-bold mb-4">Ils nous font <br> <span>confiance.</span></h2>
+                        <p class="mb-5">Découvrez pourquoi les leaders technologiques mondiaux choisissent
+                            AfriTalent pour
+                            sourcer
+                            leurs équipes.</p>
+                        <div class="  gap-2  me-5 mb-4">
+                            <button class="btn-nav rounded-circle" data-bs-target="#carouselTemoignages"
+                                data-bs-slide="prev"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="btn-nav rounded-circle" data-bs-target="#carouselTemoignages"
+                                data-bs-slide="next"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7">
+
+                        <!-- CARROUSEL : 1 témoignage par slide -->
+                        <div id="carouselTemoignages" class="carousel slide " data-bs-ride="carousel ">
+                            <div class="carousel-inner  ">
+
+                                <!-- SLIDE 1 -->
+                                <div class="carousel-item active ">
+                                    <div class="carte-temoignage">
+                                        <div class="personne">
+                                            <div class="avatar"><img
+                                                    src="image/jeremy-mcgilvrey-Mum-4dB0VsE-unsplash (1).jpg"
+                                                    alt="Elena Rodriguez">
+                                            </div>
+                                            <div>
+                                                <div class="nom">Elena Rodriguez</div>
+                                                <div class="role">Product Head @ DataFlow London</div>
+                                                <div class="etoiles text-warning">★★★★★</div>
+                                            </div>
+                                        </div>
+
+                                        <p class="citation">
+                                            "Trouver des profils Data Science de qualité était un défi constant
+                                            jusqu'à ce qu'on découvre AfriTalent. La plateforme facilite tout,
+                                            du sourcing à la facturation."
+                                        </p>
+
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                                <div class="card cart-t">
-                                    <i class="fa-regular fa-pen-to-square p-3"></i>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Tech Writing</h5>
-                                        <p class="card-text">Documentation, White papers, API docs. Communiquez
-                                            clairement
-                                            vos solutions techniques.</p>
-                                        <a href="#" class="btn">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+
+                                <!-- SLIDE 3 -->
+                                <div class="carousel-item">
+                                    <div class="carte-temoignage">
+                                        <div class="personne">
+                                            <div class="avatar"><img
+                                                    src="image/mohamad-khosravi-zCSlmX3-98I-unsplash.jpg"
+                                                    alt="Marcus Garvey">
+                                            </div>
+                                            <div>
+                                                <div class="nom">Marcus Garvey</div>
+                                                <div class="role">Founder @ StartupHub Lagos</div>
+                                                <div class="etoiles text-warning">★★★★★</div>
+                                            </div>
+                                        </div>
+
+                                        <p class="citation">
+                                            "La réactivité est le point fort. On a eu accès à des experts en
+                                            cybersécurité immédiatement. Une flexibilité rare sur le marché
+                                            aujourd'hui."
+                                        </p>
+
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                                <div class="card cart-t">
-                                    <i class="fa-regular fa-cloud p-3"></i>
-                                    <div class="card-body">
-                                        <h5 class="card-title">DevOps & Cloud</h5>
-                                        <p class="card-text">AWS, Azure, Docker, Kubernetes. Assurez la stabilité et
-                                            l'automatisation de vos systèmes avec des outils de DevOps.</p>
-                                        <a href="#" class="btn">Découvrir <i class="fa-solid fa-arrow-right"></i></a>
+
+                                <!-- SLIDE 4 -->
+                                <div class="carousel-item">
+                                    <div class="carte-temoignage">
+                                        <div class="personne">
+                                            <div class="avatar"><img src="image/fakhri-labib-ZhBGD4vykCU-unsplash.jpg"
+                                                    alt="Sophie Martin">
+                                            </div>
+                                            <div>
+                                                <div class="nom">Sophie Martin</div>
+                                                <div class="role">Head of Engineering @ FinTech Berlin</div>
+                                                <div class="etoiles text-warning">★★★★★</div>
+                                            </div>
+                                        </div>
+
+                                        <p class="citation">
+                                            "AfriTalent nous a permis de constituer une équipe data complète
+                                            en moins de deux semaines. La qualité des profils dépasse souvent
+                                            nos attentes."
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <!-- SLIDE 5 -->
+                                <div class="carousel-item">
+                                    <div class="carte-temoignage">
+                                        <div class="personne">
+                                            <div class="avatar"><img src="image/gregory-hayes-h5cd51KXmRQ-unsplash.jpg"
+                                                    alt="James Okafor">
+                                            </div>
+                                            <div>
+                                                <div class="nom">James Okafor</div>
+                                                <div class="role">CTO @ Web3Labs Dubai</div>
+                                                <div class="etoiles text-warning">★★★★★</div>
+                                            </div>
+                                        </div>
+
+                                        <p class="citation">
+                                            "Grâce à AfriTalent, nous avons trouvé des développeurs blockchain
+                                            exceptionnels en Afrique de l'Ouest. Un vrai game-changer pour notre
+                                            roadmap."
+                                        </p>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-                <section class="section-temoignages section-anime" id="temoignage ">
-                    <div class="container ">
+                </div>
+            </div>
 
-                        <!-- En-tête de la section -->
-                        <div class="row">
-                            <div class="col-12 col-md-5">
-                                <h2 class="fw-bold mb-4">Ils nous font <br> <span>confiance.</span></h2>
-                                <p class="mb-5">Découvrez pourquoi les leaders technologiques mondiaux choisissent
-                                    AfriTalent pour
-                                    sourcer
-                                    leurs équipes.</p>
-                                <div class="  gap-2  me-5 mb-4">
-                                    <button class="btn-nav rounded-circle" data-bs-target="#carouselTemoignages"
-                                        data-bs-slide="prev"><i class="fa-solid fa-angle-left"></i></button>
-                                    <button class="btn-nav rounded-circle" data-bs-target="#carouselTemoignages"
-                                        data-bs-slide="next"><i class="fa-solid fa-angle-right"></i></button>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-7">
+        </section>
+        <!-- <-- Section "Appel à l'action" -->
+        <section class="Action container  text-center py-5 rounded-5 my-5 section-anime">
+            <h1 class="fw-bold my-4">Prêt à propulser votre <br> prochain projet ?</h1>
+            <p class="mb-4">Rejoignez des centaines d'entreprises innovantes qui <br> construisent l'avenir avec
+                les meilleurs talents d'Afrique.</p>
+            <a href="tarifs.html" class="btn btn-light me-3 my-2 px-5 py-3 rounded-pill">Commencer Maintenant</a>
+            <a href="freelances.html" class="btn btn-outline-light my-2 py-3 px-5 rounded-pill">Consulter les
+                Profils</a>
+        </section>
 
-                                <!-- CARROUSEL : 1 témoignage par slide -->
-                                <div id="carouselTemoignages" class="carousel slide " data-bs-ride="carousel ">
-                                    <div class="carousel-inner  ">
 
-                                        <!-- SLIDE 1 -->
-                                        <div class="carousel-item active ">
-                                            <div class="carte-temoignage">
-                                                 <div class="personne">
-                                                    <div class="avatar"><img 
-                                                            src="image/jeremy-mcgilvrey-Mum-4dB0VsE-unsplash (1).jpg"
-                                                            alt="Elena Rodriguez">
-                                                    </div>
-                                                    <div>
-                                                        <div class="nom">Elena Rodriguez</div>
-                                                        <div class="role">Product Head @ DataFlow London</div>
-                                                        <div class="etoiles text-warning">★★★★★</div>
-                                                    </div>
-                                                </div>
-                                              
-                                                <p class="citation">
-                                                    "Trouver des profils Data Science de qualité était un défi constant
-                                                    jusqu'à ce qu'on découvre AfriTalent. La plateforme facilite tout,
-                                                    du sourcing à la facturation."
-                                                </p>
-                                               
-                                            </div>
-                                        </div>
+    </main>
 
-                                        <!-- SLIDE 3 -->
-                                        <div class="carousel-item">
-                                            <div class="carte-temoignage">
-                                                  <div class="personne">
-                                                    <div class="avatar"><img 
-                                                            src="image/mohamad-khosravi-zCSlmX3-98I-unsplash.jpg"
-                                                            alt="Marcus Garvey">
-                                                    </div>
-                                                    <div>
-                                                        <div class="nom">Marcus Garvey</div>
-                                                        <div class="role">Founder @ StartupHub Lagos</div>
-                                                        <div class="etoiles text-warning">★★★★★</div>
-                                                    </div>
-                                                </div>
-                                              
-                                                <p class="citation">
-                                                    "La réactivité est le point fort. On a eu accès à des experts en
-                                                    cybersécurité immédiatement. Une flexibilité rare sur le marché
-                                                    aujourd'hui."
-                                                </p>
-                                              
-                                            </div>
-                                        </div>
+    <footer>
+        <div class="container-fluid bg-light section-anime   ">
+            <div class="row py-2">
+                <div class="col-12 col-md-3 mb-3 mb-md-1 p-4  footer-brand">
+                    <a class="navbar-brand text-uppercase fw-bold " href="index.html">
+                        <span class="bg-dark bg-gradient p-1 rounded-3 text-light">afri</span>talent
+                    </a>
+                    <p class="mt-4">La plateforme de référence pour connecter l'élite technologique africaine
+                        avec le marché global.</p>
+                </div>
+                <div class="col-12 col-md-3 p-4 footer-col">
+                    <h6 class="fw-bold mb-4">Plateforme</h6>
+                    <ul class="list-unstyled gap-4 d-flex flex-column">
+                        <li><a href="index.html" class="text-reset text-decoration-none">Accueil</a></li>
+                        <li><a href="freelances.html" class="text-reset text-decoration-none">Freelances</a></li>
+                        <li><a href="tarifs.html" class="text-reset text-decoration-none">Tarifs</a></li>
+                        <li><a href="about.html#valeur" class="text-reset text-decoration-none">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 p-4 footer-col">
+                    <h6 class="fw-bold mb-4">Ressources</h6>
+                    <ul class="list-unstyled gap-4 d-flex flex-column">
+                        <li><a href="about.html" class="text-reset text-decoration-none">À propos</a></li>
+                        <li><a href="contact.html" class="text-reset text-decoration-none">Contact</a></li>
+                        <li><a href="tarifs.html#FAQ" class="text-reset text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="tarifs.html#FAQ" class="text-reset text-decoration-none">Terms of Service</a></li>
 
-                                        <!-- SLIDE 4 -->
-                                        <div class="carousel-item">
-                                            <div class="carte-temoignage">
-                                                  <div class="personne">
-                                                    <div class="avatar"><img 
-                                                            src="image/fakhri-labib-ZhBGD4vykCU-unsplash.jpg"
-                                                            alt="Sophie Martin">
-                                                    </div>
-                                                    <div>
-                                                        <div class="nom">Sophie Martin</div>
-                                                        <div class="role">Head of Engineering @ FinTech Berlin</div>
-                                                        <div class="etoiles text-warning">★★★★★</div>
-                                                    </div>
-                                                </div>
-                                               
-                                                <p class="citation">
-                                                    "AfriTalent nous a permis de constituer une équipe data complète
-                                                    en moins de deux semaines. La qualité des profils dépasse souvent
-                                                    nos attentes."
-                                                </p>
-                                              
-                                            </div>
-                                        </div>
-
-                                        <!-- SLIDE 5 -->
-                                        <div class="carousel-item">
-                                            <div class="carte-temoignage">
-                                                 <div class="personne">
-                                                    <div class="avatar"><img
-                                                            src="image/gregory-hayes-h5cd51KXmRQ-unsplash.jpg"
-                                                            alt="James Okafor">
-                                                    </div>
-                                                    <div>
-                                                        <div class="nom">James Okafor</div>
-                                                        <div class="role">CTO @ Web3Labs Dubai</div>
-                                                        <div class="etoiles text-warning">★★★★★</div>
-                                                    </div>
-                                                </div>
-                    
-                                                <p class="citation">
-                                                    "Grâce à AfriTalent, nous avons trouvé des développeurs blockchain
-                                                    exceptionnels en Afrique de l'Ouest. Un vrai game-changer pour notre
-                                                    roadmap."
-                                                </p>
-                                               
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 p-4 footer-newsletter">
+                    <h6 class="fw-bold mb-3">Contact</h6>
+                    <p>Inscrivez-vous à notre newsletter pour rester informé.</p>
+                    <div class="d-flex my-3 ">
+                        <input type="email" placeholder="Votre adresse email" class="form-control " id="email1">
+                        <span class="erreur" id="erreur-email"></span>
+                        <button class="btn btn-dark py-2" id="envoyer"><i class="fa-solid fa-paper-plane "></i>
                     </div>
+                </div>
 
-                </section>
-                <!-- <-- Section "Appel à l'action" -->
-                <section class="Action container  text-center py-5 rounded-5 my-5 section-anime">
-                    <h1 class="fw-bold my-4">Prêt à propulser votre <br> prochain projet ?</h1>
-                    <p class="mb-4">Rejoignez des centaines d'entreprises innovantes qui <br> construisent l'avenir avec
-                        les meilleurs talents d'Afrique.</p>
-                    <a href="tarif.html" class="btn btn-light me-3 my-2 px-5 py-3 rounded-pill">Commencer Maintenant</a>
-                    <a href="freelance.html" class="btn btn-outline-light my-2 py-3 px-5 rounded-pill">Consulter les
-                        Profils</a>
-                </section>
+            </div>
+            <hr class="footer-hr">
+            <div
+                class="container d-flex flex-column flex-md-row justify-content-between align-items-center py-4  footer-bottom ">
+                <p class="mb-0">&copy; 2026 AfriTalent. Tous droits réservés.</p>
+                <div class="d-flex gap-3 mt-3 mt-md-0">
+                    <a href="https://facebook.com/afritalent" class="text-dark"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/afritalent" class="text-dark"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://linkedin.com/company/afritalent" class="text-dark"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com/afritalent" class="text-dark"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+    </footer>
+    <button class="retour" aria-label="Retour en haut">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
+    <!-- Bootstrap 5 via CDN : script JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Votre script JavaScript -->
+    <script src="js/main.js"></script>
 
-            </main>
-
-            <footer>
-                <div class="container-fluid bg-light section-anime   ">
-                    <div class="row py-2">
-                        <div class="col-12 col-md-3 mb-3 mb-md-1 p-4  footer-brand">
-                            <a class="navbar-brand text-uppercase fw-bold " href="index.html">
-                                <span class="bg-dark bg-gradient p-1 rounded-3 text-light">afri</span>talent
-                            </a>
-                            <p class="mt-4">La plateforme de référence pour connecter l'élite technologique africaine
-                                avec le marché global.</p>
-                        </div>
-                        <div class="col-12 col-md-3 p-4 footer-col">
-                            <h6 class="fw-bold mb-4">Plateforme</h6>
-                            <ul class="list-unstyled gap-4 d-flex flex-column">
-                                <li><a href="index.html" class="text-reset text-decoration-none">Accueil</a></li>
-                                <li><a href="freelance.html" class="text-reset text-decoration-none">Freelances</a></li>
-                                <li><a href="tarif.html" class="text-reset text-decoration-none">Tarifs</a></li>
-                                <li><a href="#" class="text-reset text-decoration-none">Blog</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-md-3 p-4 footer-col">
-                            <h6 class="fw-bold mb-4">Ressources</h6>
-                            <ul class="list-unstyled gap-4 d-flex flex-column">
-                                <li><a href="about.html" class="text-reset text-decoration-none">À propos</a></li>
-                                <li><a href="contact.html" class="text-reset text-decoration-none">Contact</a></li>
-                                <li><a href="#" class="text-reset text-decoration-none">Privacy Policy</a></li>
-                                <li><a href="#" class="text-reset text-decoration-none">Terms of Service</a></li>
-
-                            </ul>
-                        </div>
-                        <div class="col-12 col-md-3 p-4 footer-newsletter">
-                            <h6 class="fw-bold mb-3">Contact</h6>
-                            <p>Inscrivez-vous à notre newsletter pour rester informé.</p>
-                            <div class="d-flex my-3 ">
-                                <input type="email" placeholder="Votre adresse email" class="form-control ">
-                                <button class="btn btn-dark py-2"><i class="fa-solid fa-paper-plane "></i>
-                                </button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <hr class="footer-hr">
-                    <div
-                        class="container d-flex flex-column flex-md-row justify-content-between align-items-center py-4  footer-bottom ">
-                        <p class="mb-0">&copy; 2026 AfriTalent. Tous droits réservés.</p>
-                        <div class="d-flex gap-3 mt-3 mt-md-0">
-                            <a href="#" class="text-dark"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="text-dark"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#" class="text-dark"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#" class="text-dark"><i class="fa-brands fa-instagram"></i></a>
-                        </div>
-                    </div>
-            </footer>
-             <button class="retour" aria-label="Retour en haut">
-             <i class="fa-solid fa-arrow-up"></i>
-         </button>
-
-            <!-- Bootstrap 5 via CDN : script JavaScript -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-            <!-- Votre script JavaScript -->
-            <script src="js/main.js"></script>
-       
 </body>
 
 </html>
